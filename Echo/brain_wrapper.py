@@ -25,31 +25,37 @@ class EchoBrain:
 
     def switch_model(self, name: str) -> str:
         name = name.strip()
-        if not name: return "No model specified."
+        if not name:
+            return "No model specified."
         self.model_name = name
         self.llm = LLM(model=self.model_name)
         write_active_model(name)
         return f"Switched model → {name}"
 
-    def tool_chat(self, text: str) -> str:
-        try:
-            proposal = self.llm.chat_json(system=TOOL_PROMPT, messages=[{"role":"user","content": text}])
-        except Exception as e:
-            raw = str(e); marker = "No JSON object found in:"
-            return raw.split(marker,1)[1].strip() if marker in raw else f"Model error: {raw}"
+    # --- helpers ---
 
-        chat_text = ((proposal.get("chat") or proposal.get("say") or "") if isinstance(proposal, dict) else "").strip()
-        tool_out = ""
-        try:
-            action = (proposal.get("action") or {}) if isinstance(proposal, dict) else {}
-            if isinstance(action, dict) and action.get("name","none") != "none":
-                say_text, tool_result = execute_action(proposal)
-                if not chat_text and say_text: chat_text = str(say_text).strip()
-                if tool_result: tool_out = f"{tool_result}"
-        except Exception as e:
-            tool_out = f"[tool-error] {e}"
+    def _normalize_chat(self, text: str) -> str:
+        t = (text or "").strip()
+        if len(t) < 12:
+            return "Hello! How can I help you today?"
+        return t
 
-        return chat_text + ("\n<<TOOL_CARD>>\n"+tool_out if tool_out else "") or "(no response)"
+    def _run_ai(self, text: str) -> str:
+        system_msg = {"role": "system", "content": TOOL_PROMPT}
+        user_msg = {"role": "user", "content": text}
+        try:
+            proposal = self.llm.chat_json(system=TOOL_PROMPT, messages=[system_msg, user_msg])
+        except Exception as e:
+            return f"Model error: {e}"
+
+        # Use execute_action to parse either {'chat':..., 'action':...} or legacy 'say'
+        chat_text, tool_result = execute_action(proposal)
+        chat_text = self._normalize_chat(chat_text)
+        if tool_result:
+            return f"{chat_text}\n\n<<TOOL_CARD>>\n{tool_result}"
+        return chat_text
+
+    # --- command router (only called when input starts with "/") ---
 
     def handle_command(self, cmd: str) -> str:
         parts = cmd.split(maxsplit=1)
@@ -57,38 +63,92 @@ class EchoBrain:
         tail = parts[1] if len(parts) > 1 else ""
 
         if head == "remember":
-            if "=" not in tail: return "Use: remember key=value"
-            k, v = [s.strip() for s in tail.split("=",1)]
-            self.mem["facts"][k] = v; save_mem(self.mem); return f"Noted. I’ll remember {k} = {v}."
+            if "=" not in tail:
+                return "Use: remember key=value"
+            k, v = [s.strip() for s in tail.split("=", 1)]
+            self.mem["facts"][k] = v
+            save_mem(self.mem)
+            return f"Noted. I’ll remember {k} = {v}."
+
         if head == "recall":
-            if not self.mem["facts"]: return "I don't have any facts yet."
-            items = ", ".join(f"{k}={v}" for k,v in self.mem["facts"].items()); return "I remember: " + items
+            if not self.mem["facts"]:
+                return "I don't have any facts yet."
+            items = ", ".join(f"{k}={v}" for k, v in self.mem["facts"].items())
+            return "I remember: " + items
+
+        if head == "diag":
+            try:
+                self.llm.warmup()
+            except Exception:
+                pass
+            dev = getattr(self.llm, "last_device", "unknown")
+            return f"Diagnostics: device={dev}, model={self.llm.model}"
+
         if head == "goal":
-            if not tail: return "Use: goal <text>"
-            self.mem["goals"].append(tail); save_mem(self.mem); return f"Goal added: “{tail}”"
+            if not tail:
+                return "Use: goal <text>"
+            self.mem["goals"].append(tail)
+            save_mem(self.mem)
+            return f"Goal added: “{tail}”"
+
         if head == "goals":
             return "\n".join(f"- {g}" for g in self.mem["goals"]) or "No goals yet."
+
         if head == "history":
-            if not self.session: return "No session messages yet."
+            if not self.session:
+                return "No session messages yet."
             return "\n".join(self.session[-10:])
+
         if head == "clearlog":
-            clear_thoughts(); return "Thinking log cleared."
-        if head == "ls":    return a_ls(tail)
-        if head == "read":  return a_read(tail) if tail else "Use: read <path>"
+            clear_thoughts()
+            return "Thinking log cleared."
+
+        if head == "ls":
+            return a_ls(tail)
+
+        if head == "read":
+            return a_read(tail) if tail else "Use: read <path>"
+
         if head == "write":
-            if not tail or " " not in tail: return "Use: write <path> <text...>"
-            p, t = tail.split(" ",1); return a_write(p,t)
-        if head == "mkdir": return a_mkdir(tail) if tail else "Use: mkdir <path>"
-        return self.tool_chat(cmd)
+            if not tail or " " not in tail:
+                return "Use: write <path> <text...>"
+            p, t = tail.split(" ", 1)
+            return a_write(p, t)
+
+        if head == "mkdir":
+            return a_mkdir(tail) if tail else "Use: mkdir <path>"
+
+        if head == "ai":
+            if not tail:
+                return "Use: /ai <your request>"
+            return self._run_ai(tail)
+
+        # Unknown slash command → show help
+        return "Unknown command. Try /help, /ls, /read, /write, /mkdir, /diag."
+
+    # --- unified entry point for UI/console ---
 
     def process(self, user_text: str) -> str:
         u = user_text.strip()
-        if not u: return ""
+        if not u:
+            return ""
+
+        # log input
         if u.lower() != "clearlog":
-            self.session.append(f"YOU: {u}"); log_thought(f"observed_input -> {u}")
+            self.session.append(f"YOU: {u}")
+            log_thought(f"observed_input -> {u}")
         else:
             self.session.append(f"YOU: {u}")
-        reply = self.handle_command(u)
+
+        # slash-gated commands; otherwise go to AI
+        if u.startswith("/"):
+            reply = self.handle_command(u[1:])
+        else:
+            reply = self._run_ai(u)
+
+        # log output
         self.session.append(f"ECHO: {reply}")
-        if u.lower() != "clearlog": log_thought(f"planned_reply -> {reply}")
+        if u.lower() != "clearlog":
+            log_thought(f"planned_reply -> {reply}")
         return reply
+

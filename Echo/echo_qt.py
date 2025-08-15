@@ -5,14 +5,23 @@ from pathlib import Path
 from PySide6.QtCore import Qt, QTimer, QProcess, QSettings, QEvent, QObject, Signal, QRunnable, QThreadPool, QSize
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QSplitter, QVBoxLayout, QHBoxLayout,
-    QLabel, QLineEdit, QScrollArea, QComboBox, QFrame, QToolButton, QTextEdit
+    QLabel, QLineEdit, QScrollArea, QComboBox, QFrame, QToolButton, QTextEdit, QPushButton, QDialog
 )
 from PySide6.QtGui import QTextCursor
+from settings_dialog import SettingsDialog, load_settings, ORG_NAME, APP_NAME
+import os
+
 
 from theme import DARK_QSS, default_font
 from brain_wrapper import EchoBrain
 from ui_bubbles import Bubble, make_row, tool_card, start_dots, typewriter
 import json
+import os
+
+os.environ.setdefault("OLLAMA_NUM_PARALLEL", "1")
+os.environ.setdefault("OLLAMA_KEEP_ALIVE", "5m")
+os.environ.setdefault("ECHO_FALLBACK_MODEL", "llama3:8b")
+
 
 def _extract_chat_and_tool(reply: str) -> tuple[str, str | None]:
     """
@@ -92,6 +101,10 @@ class EchoWindow(QMainWindow):
         top_row.addWidget(QLabel("Model")); top_row.addWidget(self.model_combo, 1)
         btn_refresh = QToolButton(); btn_refresh.setText("↻"); btn_refresh.clicked.connect(self.refresh_models); top_row.addWidget(btn_refresh)
         btn_set = QToolButton(); btn_set.setText("✓"); btn_set.clicked.connect(self.set_active_model); top_row.addWidget(btn_set)
+        
+        settings_btn = QPushButton("Settings")
+        settings_btn.clicked.connect(self.open_settings)
+        top_row.addWidget(settings_btn)
 
         # pull
         self.pull_edit = QLineEdit(); self.pull_edit.setPlaceholderText("Pull model (e.g., llama3:8b)")
@@ -107,7 +120,7 @@ class EchoWindow(QMainWindow):
 
         # input + media button
         in_row = QHBoxLayout()
-        self.input = QLineEdit(); self.input.setPlaceholderText("Type anything… (Echo will reply and use tools automatically)")
+        self.input = QLineEdit(); self.input.setPlaceholderText("Type a message…  (tip: use /commands like /ls, /read, /write; otherwise it chats)")
         self.input.returnPressed.connect(self.media_clicked); self.input.installEventFilter(self)
         in_row.addWidget(self.input, 1)
         self.media_btn = QToolButton(); self.media_btn.setObjectName("Media"); self.media_btn.setFixedSize(QSize(56,56))
@@ -116,6 +129,24 @@ class EchoWindow(QMainWindow):
         lv.addLayout(in_row)
 
         splitter.addWidget(left)
+                # settings
+        self._settings = load_settings()
+        self._bubble_ratio = float(self._settings["bubble_width_pct"]) / 100.0
+
+        # apply LLM/device prefs
+        try:
+            # tell llm.py which host/port to use
+            os.environ["OLLAMA_HOST"] = str(self._settings["ollama_host"])
+            os.environ["OLLAMA_PORT"] = str(self._settings["ollama_port"])
+        except Exception:
+            pass
+
+        # model preference
+        try:
+            self.brain.llm.prefer_gpu = bool(self._settings["prefer_gpu"])
+        except Exception:
+            pass
+
 
         # right column (tail)
         right = QWidget(); rv = QVBoxLayout(right); rv.setContentsMargins(12,12,12,12); rv.setSpacing(10)
@@ -132,14 +163,67 @@ class EchoWindow(QMainWindow):
 
         # start backend after state is ready
         self.start_backend_once()
+        
+    def start_backend_once(self) -> None:
+        if not MAIN_PY.exists():
+            self.add_bubble("echo", "Note: main.py not found next to echo_qt.py; skipping auto-run.")
+            return
+        os.environ["ECHO_LAUNCHED_FROM_UI"] = "1"
+        try:
+            QProcess.startDetached(sys.executable, [str(MAIN_PY), "--ui"], str(HERE))
+            self.add_bubble("echo", "Started background brain.")
+        except Exception as e:
+            self.add_bubble("echo", f"Could not start main.py automatically: {e}")
+            return
+
+        # Warmup shortly after launch
+        QTimer.singleShot(800, self._warmup_model)
+        
+    def open_settings(self) -> None:
+        dlg = SettingsDialog(self)
+        if dlg.exec() == QDialog.Accepted:
+            # reload & apply
+            self._settings = load_settings()
+            self._bubble_ratio = float(self._settings["bubble_width_pct"]) / 100.0
+            self.refresh_bubble_widths()
+
+            # update llm prefs and host/port
+            try:
+                self.brain.llm.prefer_gpu = bool(self._settings["prefer_gpu"])
+            except Exception:
+                pass
+            try:
+                os.environ["OLLAMA_HOST"] = str(self._settings["ollama_host"])
+                os.environ["OLLAMA_PORT"] = str(self._settings["ollama_port"])
+            except Exception:
+                pass
+
+            # optionally switch model if a default is set
+            default_model = self._settings.get("default_model", "").strip()
+            if default_model:
+                msg = self.brain.switch_model(default_model)
+                self.append_echo(msg)
+
+            self.append_echo("Settings updated.")
+
+
+    def _warmup_model(self) -> None:
+        try:
+            self.brain.llm.warmup()
+            dev = (self.brain.llm.last_device or "unknown").upper()
+            self.add_bubble("echo", f"Model warmed up ({dev}).")
+        except Exception as e:
+            self.add_bubble("echo", f"Warmup skipped: {e}")
+
 
     # sizing
     def bubble_max_width(self) -> int:
         vp = self.scroll_area.viewport()
         if not vp:
             return 1600
-        w = int(vp.width() * 0.97)     # 97% of the viewport
-        return max(600, min(1600, w))  # generous clamp
+        w = int(vp.width() * self._bubble_ratio)
+        return max(600, min(1600, w))
+
 
 
     def resizeEvent(self, e):

@@ -1,4 +1,16 @@
-[2025-08-15 17:57:38] observed_input -> What's up? what's your name and what commands can I do?
-[2025-08-15 17:58:32] planned_reply -> {"thought":"provide greeting and info","chat":"Hello! I'm Echo, your sandbox assistant. You can ask me to list files with `ls`, read a file with `read`, write to a file with `write`, create a directory with `mkdir`, or do nothing with `none`.","action":{"name":"none","args":{}}}
-[2025-08-15 18:02:00] observed_input -> testing
-[2025-08-15 18:02:10] planned_reply -> {"thought":"respond to test query","chat":"Sure! What would you like to test?","action":{"name":"none","args":{}}}
+[2025-08-15 19:26:50] observed_input -> Write a 1500-word essay on the history of clocks and cite 10 sources.
+[2025-08-15 19:26:50] planned_reply -> Wrote 61 chars to a
+[2025-08-15 19:27:14] observed_input -> Hello
+[2025-08-15 19:28:10] planned_reply -> {"thought":"greet","chat":"Hello! How can I help you today?","action":{"name":"none","args":{}}}
+[2025-08-15 19:43:26] observed_input -> Write a 1500-word essay on the history of clocks and cite 10 sources.
+[2025-08-15 19:55:02] planned_reply -> Model error: Model error: Model error: 500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate
+[2025-08-15 20:27:37] observed_input -> hello man!
+[2025-08-15 20:29:07] planned_reply -> Okay.
+[2025-08-15 20:36:20] observed_input -> Yo hello
+[2025-08-15 21:56:47] observed_input -> Hello bro
+[2025-08-15 21:57:04] observed_input -> Hello man
+[2025-08-15 21:57:51] planned_reply -> Okay.
+[2025-08-15 21:57:58] planned_reply -> Okay.
+[2025-08-15 21:58:05] observed_input -> /diag
+[2025-08-15 21:58:05] planned_reply -> None
+[2025-08-15 22:13:56] observed_input -> Hello man!

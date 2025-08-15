@@ -4,6 +4,8 @@ from PySide6.QtCore import Qt, QTimer
 from PySide6.QtWidgets import (
     QFrame, QLabel, QVBoxLayout, QWidget, QHBoxLayout, QSizePolicy
 )
+BUBBLE_MIN_RATIO = 0.62   # 62% of the max width for short messages
+TOOL_MIN_RATIO   = 0.55   # tool cards a bit narrower
 
 
 class Bubble(QFrame):
@@ -34,7 +36,7 @@ class Bubble(QFrame):
             )
 
         lay.addWidget(self.label)
-
+        
     def setText(self, text: str) -> None:
         self.label.setText(text)
         self.refreshWidth()
@@ -42,13 +44,15 @@ class Bubble(QFrame):
     def refreshWidth(self) -> None:
         mw = int(self.max_width_provider() or 640)
         self.label.setMaximumWidth(mw)
+        self.label.setMinimumWidth(int(mw * BUBBLE_MIN_RATIO))
         self.label.adjustSize()
+
 
 
 def make_row(widget: QWidget, align: str) -> QWidget:
     row = QWidget()
     h = QHBoxLayout(row)
-    h.setContentsMargins(2, 6, 2, 6)  # slimmer margins
+    h.setContentsMargins(2, 6, 2, 6)
     if align == "right":
         h.addStretch(1)
         h.addWidget(widget, 0)
@@ -59,7 +63,6 @@ def make_row(widget: QWidget, align: str) -> QWidget:
 
 
 def tool_card(text: str, max_width_provider) -> QWidget:
-    """Small, dashed card under the assistant bubble for tool outputs."""
     card = QFrame()
     card.setObjectName("ToolCard")
     lay = QVBoxLayout(card)
@@ -73,9 +76,11 @@ def tool_card(text: str, max_width_provider) -> QWidget:
 
     mw = int(max_width_provider() or 640)
     lbl.setMaximumWidth(mw)
+    lbl.setMinimumWidth(int(mw * TOOL_MIN_RATIO))
     lbl.adjustSize()
 
     return make_row(card, "left")
+
 
 
 def start_dots(label: QLabel) -> QTimer:
