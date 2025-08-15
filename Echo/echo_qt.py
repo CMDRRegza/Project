@@ -12,6 +12,33 @@ from PySide6.QtGui import QTextCursor
 from theme import DARK_QSS, default_font
 from brain_wrapper import EchoBrain
 from ui_bubbles import Bubble, make_row, tool_card, start_dots, typewriter
+import json
+
+def _extract_chat_and_tool(reply: str) -> tuple[str, str | None]:
+    """
+    Accepts either:
+      - our combined string: "chat...\n<<TOOL_CARD>>\n<tool text>"
+      - a pure JSON string: {"thought": "...", "chat": "...", "action": {...}}
+      - plain text
+    Returns (chat_text, tool_text_or_None)
+    """
+    # 1) our sentinel path
+    if "\n<<TOOL_CARD>>\n" in reply:
+        msg, tool_text = reply.split("\n<<TOOL_CARD>>\n", 1)
+        return msg.strip(), tool_text.strip()
+
+    # 2) JSON string from model/backend
+    try:
+        data = json.loads(reply)
+        if isinstance(data, dict):
+            chat = (data.get("chat") or data.get("say") or "").strip()
+            return (chat if chat else reply.strip()), None
+    except Exception:
+        pass
+
+    # 3) plain text
+    return reply.strip(), None
+
 
 HERE = Path(__file__).resolve().parent
 MAIN_PY = HERE / "main.py"
@@ -110,9 +137,11 @@ class EchoWindow(QMainWindow):
     def bubble_max_width(self) -> int:
         vp = self.scroll_area.viewport()
         if not vp:
-            return 800
-        w = int(vp.width() * 0.80)  # wider bubbles
-        return max(420, min(980, w))  # clamp
+            return 1600
+        w = int(vp.width() * 0.97)     # 97% of the viewport
+        return max(600, min(1600, w))  # generous clamp
+
+
     def resizeEvent(self, e):
         super().resizeEvent(e)
         for b in self._all_bubbles: b.refreshWidth()
@@ -175,28 +204,36 @@ class EchoWindow(QMainWindow):
         self.set_media_state(False)
 
     # finish handlers
-    def _on_finished(self, reply: str):
-        if self._cancel_flag.get("cancel"): return
-        if self._anim_timer: self._anim_timer.stop(); self._anim_timer = None
+    def _on_finished(self, reply: str) -> None:
+        if self._cancel_flag.get("cancel"):
+            return
+        if self._anim_timer:
+            self._anim_timer.stop()
+            self._anim_timer = None
         self.set_media_state(False)
 
-        tool_text = None
-        if "\n<<TOOL_CARD>>\n" in reply:
-            msg, tool_text = reply.split("\n<<TOOL_CARD>>\n", 1)
+        msg, tool_text = _extract_chat_and_tool(reply)
+
+        if self._pending_bubble:
+            from ui_bubbles import typewriter
+            typewriter(self._pending_bubble, msg)
         else:
-            msg = reply
+            self.add_bubble("echo", msg)
 
-        if self._pending_bubble: typewriter(self._pending_bubble, msg)
-        else: self.add_bubble("echo", msg)
+        if tool_text:
+            self.add_tool_card(tool_text)
 
-        if tool_text: self.add_tool_card(tool_text)
-
-    def _on_failed(self, err: str):
-        if self._cancel_flag.get("cancel"): return
-        if self._anim_timer: self._anim_timer.stop(); self._anim_timer = None
+    def _on_failed(self, err: str) -> None:
+        if self._cancel_flag.get("cancel"):
+            return
+        if self._anim_timer:
+            self._anim_timer.stop()
+            self._anim_timer = None
         self.set_media_state(False)
-        if self._pending_bubble: self._pending_bubble.setText(f"Error: {err}")
-        else: self.add_bubble("echo", f"Error: {err}")
+        if self._pending_bubble:
+            self._pending_bubble.setText(f"Error: {err}")
+        else:
+            self.add_bubble("echo", f"Error: {err}")
 
     # tail
     def refresh_tail(self):
