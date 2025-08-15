@@ -1,26 +1,24 @@
 # echo_qt.py
-# A sleek ChatGPT-style desktop UI for Echo (PySide6).
-# Works with your existing modules: config.py, memory.py, logger.py, actions.py, tool_spec.py, llm.py, agent.py
+# ChatGPT-style UI for Echo (PySide6).
+# - ONE circular media button (Send ↔ Stop)
+# - Typewriter effect for assistant replies
+# - Tool result as a compact card under the message
+# - No bubble cut-offs (width cap + height-for-width refresh)
+# - Auto-run main.py, QProcess pull, async sends
 
-import sys, subprocess, json, http.client, threading
+import sys, json, http.client, os
 from pathlib import Path
 
-from PySide6.QtCore import Qt, QTimer
+from PySide6.QtCore import (
+    Qt, QTimer, QProcess, QSettings, QEvent, QObject, Signal, QRunnable, QThreadPool, QSize
+)
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QSplitter, QVBoxLayout, QHBoxLayout,
-    QLabel, QLineEdit, QPushButton, QTextEdit, QScrollArea, QComboBox, QFrame
+    QLabel, QLineEdit, QScrollArea, QComboBox, QFrame, QToolButton, QTextEdit
 )
-from PySide6.QtGui import QTextCursor
+from PySide6.QtGui import QFont, QTextCursor
 
-
-
-# optional dark theme
-try:
-    import qdarktheme
-except Exception:
-    qdarktheme = None
-
-# ---- Echo brain pieces you already have ----
+# ---- Echo brain pieces ----
 from config import (
     ECHO_NAME, THINK_LOG, CURRENT_MODEL_FILE, DEFAULT_MODEL, MEM_PATH
 )
@@ -30,35 +28,52 @@ from actions import ls as a_ls, read as a_read, write as a_write, mkdir as a_mkd
 from tool_spec import TOOL_PROMPT
 from llm import LLM
 from agent import execute_action
+
+# --------------------- theme ---------------------
 DARK_QSS = """
-* { font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; }
+* { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; font-size: 14px; }
 QMainWindow, QWidget { background-color: #0b0f14; color: #e5e7eb; }
 QLabel { color: #d1d5db; }
-QLineEdit, QTextEdit, QComboBox, QScrollArea {
+
+QFrame#Bubble {
+    background-color: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 16px;
+}
+
+QFrame#ToolCard {
+    background-color: #0f1720;
+    border: 1px dashed #334155;
+    border-radius: 12px;
+}
+
+QLineEdit, QComboBox, QScrollArea {
     background-color: #0f1720; color: #e5e7eb;
-    border: 1px solid #1f2937; border-radius: 10px; padding: 8px;
+    border: 1px solid #1f2937; border-radius: 10px; padding: 10px;
 }
-QPushButton {
-    background-color: #1f2a37; color: #e5e7eb;
-    border: 1px solid #2b3645; border-radius: 10px; padding: 8px 12px;
+
+QToolButton#Media {
+    background: #0f0f12;
+    color: #e5e7eb;
+    border-radius: 28px; /* 56x56 circle */
+    border: 1px solid #2b2f3a;
+    font-weight: 700;
 }
-QPushButton:hover { background-color: #233042; }
-QPushButton:pressed { background-color: #1b2431; }
+QToolButton#Media:hover { background: #161922; }
+QToolButton#Media:pressed { background: #0d0f15; }
+
 QComboBox QAbstractItemView {
     background: #0f1720; color: #e5e7eb; selection-background-color: #334155;
     border: 1px solid #1f2937; outline: 0;
 }
-QScrollBar:vertical {
-    background: #0f1720; width: 10px; margin: 0;
-}
-QScrollBar::handle:vertical {
-    background: #263241; min-height: 24px; border-radius: 5px;
-}
+
+QScrollBar:vertical { background: #0f1720; width: 10px; margin: 0; }
+QScrollBar::handle:vertical { background: #263241; min-height: 24px; border-radius: 5px; }
 """
 
-
-
 # --------------------- tiny helpers ---------------------
+HERE = Path(__file__).resolve().parent
+MAIN_PY = HERE / "main.py"
 
 def read_current_model() -> str:
     try:
@@ -70,9 +85,8 @@ def write_active_model(name: str):
     CURRENT_MODEL_FILE.write_text(name.strip(), encoding="utf-8")
 
 def get_installed_models():
-    """Query Ollama for installed model tags."""
     try:
-        conn = http.client.HTTPConnection("127.0.0.1", 11434, timeout=5)
+        conn = http.client.HTTPConnection("127.0.0.1", 11434, timeout=3)
         conn.request("GET", "/api/tags")
         resp = conn.getresponse()
         data = resp.read()
@@ -84,11 +98,9 @@ def get_installed_models():
     except Exception:
         return []
 
-
 # --------------------- brain wrapper ---------------------
-
 class EchoBrain:
-    """Holds mem/session/model and reproduces your handle_command + logging."""
+    """Routes every message through the tool prompt and returns UI-ready text."""
     def __init__(self):
         self.model_name = read_current_model()
         self.llm = LLM(model=self.model_name)
@@ -104,7 +116,44 @@ class EchoBrain:
         write_active_model(name)
         return f"Switched model → {name}"
 
-    # your command handler (same logic as main.py)
+    def tool_chat(self, text: str) -> str:
+        """Call model with TOOL_PROMPT; expect JSON containing 'chat' and optional 'action'."""
+        try:
+            proposal = self.llm.chat_json(
+                system=TOOL_PROMPT,
+                messages=[{"role": "user", "content": text}],
+            )
+        except Exception as e:
+            raw = str(e)
+            marker = "No JSON object found in:"
+            if marker in raw:
+                return raw.split(marker, 1)[1].strip()
+            return f"Model error: {raw}"
+
+        chat_text = (
+            (proposal.get("chat") if isinstance(proposal, dict) else None)
+            or (proposal.get("say") if isinstance(proposal, dict) else None)
+            or ""
+        ).strip()
+
+        tool_out = ""
+        try:
+            action = (proposal.get("action") or {}) if isinstance(proposal, dict) else {}
+            if isinstance(action, dict) and action.get("name", "none") != "none":
+                say_text, tool_result = execute_action(proposal)
+                if not chat_text and say_text:
+                    chat_text = str(say_text).strip()
+                if tool_result:
+                    tool_out = f"{tool_result}"
+        except Exception as e:
+            tool_out = f"[tool-error] {e}"
+
+        # Pack as a transport string; UI will split on our sentinel if present.
+        if tool_out:
+            return chat_text + "\n<<TOOL_CARD>>\n" + tool_out
+        return chat_text or "(no response)"
+
+    # legacy/direct commands still supported
     def handle_command(self, cmd: str) -> str:
         parts = cmd.split(maxsplit=1)
         head = parts[0].lower()
@@ -141,220 +190,381 @@ class EchoBrain:
             clear_thoughts()
             return "Thinking log cleared."
 
-        # sandboxed actions
-        if head == "ls":
-            return a_ls(tail)
-        if head == "read":
-            if not tail:
-                return "Use: read <path>"
-            return a_read(tail)
+        # direct sandbox actions (power user)
+        if head == "ls":    return a_ls(tail)
+        if head == "read":  return a_read(tail) if tail else "Use: read <path>"
         if head == "write":
-            if not tail or " " not in tail:
-                return "Use: write <path> <text...>"
-            path, text = tail.split(" ", 1)
-            return a_write(path, text)
-        if head == "mkdir":
-            if not tail:
-                return "Use: mkdir <path>"
-            return a_mkdir(tail)
+            if not tail or " " not in tail: return "Use: write <path> <text...>"
+            path, text = tail.split(" ", 1); return a_write(path, text)
+        if head == "mkdir": return a_mkdir(tail) if tail else "Use: mkdir <path>"
 
-        # LLM tool-use (same as your main.py)
-        if head == "ai":
-            if not tail:
-                return "Use: ai <your request>"
-            system_msg = {"role": "system", "content": TOOL_PROMPT}
-            user_msg = {"role": "user", "content": tail}
-            try:
-                proposal = self.llm.chat_json(system=TOOL_PROMPT, messages=[system_msg, user_msg])
-            except Exception as e:
-                return f"Model error: {e}"
-
-            say_text, tool_result = execute_action(proposal)
-            out = say_text
-            if tool_result:
-                out += f"\n\n[tool]\n{tool_result}"
-            return out
-
-        # exit (not used in GUI)
-        if head in ("quit", "exit"):
-            return "Use the window close button."
-
-        # default small-talk
-        fact_hint = ""
-        if self.mem["facts"]:
-            k, v = next(iter(self.mem["facts"].items()))
-            fact_hint = f" (btw I still remember {k}={v})"
-        return f"I’m thinking about: “{cmd}”.{fact_hint}"
+        # everything else goes through tool+chat pipeline
+        return self.tool_chat(cmd)
 
     def process(self, user_text: str) -> str:
-        """Add logs, call handler, add reply logs; return reply."""
         u = user_text.strip()
         if not u:
             return ""
-        # log input (skip clearlog logging)
         if u.lower() != "clearlog":
             self.session.append(f"YOU: {u}")
             log_thought(f"observed_input -> {u}")
         else:
             self.session.append(f"YOU: {u}")
-
         reply = self.handle_command(u)
-
         self.session.append(f"ECHO: {reply}")
         if u.lower() != "clearlog":
             log_thought(f"planned_reply -> {reply}")
         return reply
 
+# --------------------- message widgets ---------------------
+class Bubble(QFrame):
+    """A resizable chat bubble containing a QLabel."""
+    def __init__(self, role: str, max_width_provider):
+        super().__init__()
+        self.setObjectName("Bubble")
+        self.role = role
+        self.max_width_provider = max_width_provider
+        self.setFrameShape(QFrame.NoFrame)
+        lay = QVBoxLayout(self)
+        lay.setContentsMargins(12, 8, 12, 8)
+        self.label = QLabel("")
+        self.label.setWordWrap(True)
+        self.label.setTextInteractionFlags(Qt.TextSelectableByMouse)
+        # role style
+        if role == "you":
+            self.label.setStyleSheet(
+                "font-size:14px; color:#e5e7eb; background:#2563eb; "
+                "padding:12px; border-radius:16px;"
+            )
+        else:
+            self.label.setStyleSheet(
+                "font-size:14px; color:#e5e7eb; background:#111827; "
+                "padding:12px; border-radius:16px; border:1px solid #1f2937;"
+            )
+        lay.addWidget(self.label)
 
-# --------------------- UI ---------------------
+    def setText(self, text: str):
+        self.label.setText(text)
+        self.refreshWidth()
 
-def bubble(text: str, role: str) -> QWidget:
-    """Simple chat bubble (Echo vs You)."""
-    box = QFrame()
-    box.setFrameShape(QFrame.NoFrame)
-    lay = QVBoxLayout(box)
-    lay.setContentsMargins(12, 8, 12, 8)
+    def refreshWidth(self):
+        mw = int(self.max_width_provider() or 640)
+        self.label.setMaximumWidth(mw)
+        self.label.adjustSize()
 
-    label = QLabel(text)
-    label.setWordWrap(True)
-    label.setTextInteractionFlags(Qt.TextSelectableByMouse)
+def make_row(widget: QWidget, align: str) -> QWidget:
+    """Row container to avoid cut-offs: [stretch,bubble] for 'you', [bubble,stretch] for 'echo'."""
+    row = QWidget()
+    h = QHBoxLayout(row)
+    h.setContentsMargins(0, 6, 0, 6)
+    if align == "right":  # 'you'
+        h.addStretch(1)
+        h.addWidget(widget, 0)
+    else:                 # 'echo'
+        h.addWidget(widget, 0)
+        h.addStretch(1)
+    return row
 
-    if role == "you":
-        label.setStyleSheet(
-            "font-size:14px; color:#e5e7eb; background:#2563eb; "
-            "padding:12px; border-radius:16px;"
-        )
-        lay.setAlignment(Qt.AlignRight)
-    else:
-        label.setStyleSheet(
-            "font-size:14px; color:#e5e7eb; background:#111827; "
-            "padding:12px; border-radius:16px; border:1px solid #1f2937;"
-        )
-        lay.setAlignment(Qt.AlignLeft)
+def tool_card(text: str, max_width_provider) -> QWidget:
+    card = QFrame()
+    card.setObjectName("ToolCard")
+    lay = QVBoxLayout(card); lay.setContentsMargins(12, 10, 12, 10)
+    lbl = QLabel(text.strip()); lbl.setWordWrap(True); lbl.setTextInteractionFlags(Qt.TextSelectableByMouse)
+    lay.addWidget(lbl)
+    # width cap similar to bubbles
+    mw = int(max_width_provider() or 640)
+    lbl.setMaximumWidth(mw)
+    lbl.adjustSize()
+    return make_row(card, "left")
 
-    lay.addWidget(label)
-    return box
+# --------------------- async worker ---------------------
+class BrainTaskSignals(QObject):
+    finished = Signal(str)
+    failed = Signal(str)
 
+class BrainTask(QRunnable):
+    def __init__(self, brain: EchoBrain, text: str, cancel_flag: dict):
+        super().__init__()
+        self.brain = brain
+        self.text = text
+        self.cancel_flag = cancel_flag
+        self.signals = BrainTaskSignals()
+
+    def run(self):
+        try:
+            if self.cancel_flag.get("cancel"):
+                return
+            reply = self.brain.process(self.text)
+            if self.cancel_flag.get("cancel"):
+                return
+            self.signals.finished.emit(reply)
+        except Exception as e:
+            self.signals.failed.emit(str(e))
+
+# --------------------- main window ---------------------
 class EchoWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Echo — Chat")
-        self.resize(1000, 680)
+        self.resize(1080, 740)
+        self.thread_pool = QThreadPool.globalInstance()
 
-        # brain
+        self.settings = QSettings("EchoProject", "EchoQt")
+        if self.settings.value("geometry"):
+            self.restoreGeometry(self.settings.value("geometry"))
+        if self.settings.value("windowState"):
+            self.restoreState(self.settings.value("windowState"))
+
         self.brain = EchoBrain()
+        self._fresh_session = True
+        self._running = False
+        self._cancel_flag = {"cancel": False}
+        self._anim_timer = None
+        self._pending_bubble: Bubble | None = None
+        self._type_timer = None
 
-        # root splitter
         splitter = QSplitter(Qt.Horizontal)
         self.setCentralWidget(splitter)
 
-        # ---- left: chat
+        # ---- left: chat ----
         left = QWidget()
-        lv = QVBoxLayout(left); lv.setContentsMargins(12,12,12,12); lv.setSpacing(8)
+        lv = QVBoxLayout(left); lv.setContentsMargins(12,12,12,12); lv.setSpacing(10)
 
         # top controls (model picker + refresh + set + pull)
         top_row = QHBoxLayout(); lv.addLayout(top_row)
-
-        self.model_combo = QComboBox()
-        self.refresh_models()
+        self.model_combo = QComboBox(); self.refresh_models()
         self.model_combo.setEditable(False)
         self.model_combo.setSizeAdjustPolicy(QComboBox.AdjustToContents)
         top_row.addWidget(QLabel("Model"))
         top_row.addWidget(self.model_combo, 1)
+        refresh_btn = QToolButton(); refresh_btn.setText("↻"); refresh_btn.clicked.connect(self.refresh_models); top_row.addWidget(refresh_btn)
+        set_btn = QToolButton(); set_btn.setText("✓"); set_btn.clicked.connect(self.set_active_model); top_row.addWidget(set_btn)
 
-        refresh_btn = QPushButton("Refresh")
-        refresh_btn.clicked.connect(self.refresh_models)
-        top_row.addWidget(refresh_btn)
-
-        set_btn = QPushButton("Set Active")
-        set_btn.clicked.connect(self.set_active_model)
-        top_row.addWidget(set_btn)
-
-        # optional pull box
-        self.pull_edit = QLineEdit()
-        self.pull_edit.setPlaceholderText("Pull model (e.g., llama3:8b)")
-        pull_btn = QPushButton("Pull")
-        pull_btn.clicked.connect(self.pull_model_clicked)
-        top_row2 = QHBoxLayout(); lv.addLayout(top_row2)
-        top_row2.addWidget(self.pull_edit, 1)
-        top_row2.addWidget(pull_btn)
+        # pull row
+        self.pull_edit = QLineEdit(); self.pull_edit.setPlaceholderText("Pull model (e.g., llama3:8b)")
+        pull_btn = QToolButton(); pull_btn.setText("⇣"); pull_btn.clicked.connect(self.pull_model_clicked)
+        row2 = QHBoxLayout(); lv.addLayout(row2)
+        row2.addWidget(self.pull_edit, 1); row2.addWidget(pull_btn)
 
         # chat scroller
-        self.scroll_area = QScrollArea()
-        self.scroll_area.setWidgetResizable(True)
+        self.scroll_area = QScrollArea(); self.scroll_area.setWidgetResizable(True)
         self.chat_holder = QWidget()
-        self.chat_layout = QVBoxLayout(self.chat_holder)
-        self.chat_layout.addStretch(1)
+        self.chat_layout = QVBoxLayout(self.chat_holder); self.chat_layout.setSpacing(0); self.chat_layout.addStretch(1)
         self.scroll_area.setWidget(self.chat_holder)
         lv.addWidget(self.scroll_area, 1)
 
-        # input row
+        # input row with ONE circular media button
         in_row = QHBoxLayout()
         self.input = QLineEdit()
-        self.input.setPlaceholderText("Type a message…  (tip: prefix with 'ai ' to use the model)")
-        send_btn = QPushButton("Send")
-        send_btn.clicked.connect(self.on_send)
-        self.input.returnPressed.connect(self.on_send)
+        self.input.setPlaceholderText("Type anything… (Echo will reply and use tools automatically)")
+        self.input.returnPressed.connect(self.media_clicked)        # Enter = click media button
+        self.input.installEventFilter(self)
         in_row.addWidget(self.input, 1)
-        in_row.addWidget(send_btn)
-        lv.addLayout(in_row)
 
+        self.media_btn = QToolButton()
+        self.media_btn.setObjectName("Media")
+        self.media_btn.setFixedSize(QSize(56, 56))
+        self.media_btn.setText("↑")          # idle = send
+        self.media_btn.setToolTip("Send")
+        self.media_btn.clicked.connect(self.media_clicked)
+        in_row.addWidget(self.media_btn, 0, Qt.AlignRight)
+
+        lv.addLayout(in_row)
         splitter.addWidget(left)
 
-        # ---- right: thinking tail
+        # ---- right: tail ----
         right = QWidget()
-        rv = QVBoxLayout(right); rv.setContentsMargins(12,12,12,12)
+        rv = QVBoxLayout(right); rv.setContentsMargins(12,12,12,12); rv.setSpacing(10)
         rv.addWidget(QLabel("Thinking (live tail)"))
-        self.tail = QTextEdit(); self.tail.setReadOnly(True)
-        self.tail.setLineWrapMode(QTextEdit.NoWrap)
+        self.tail = QTextEdit(); self.tail.setReadOnly(True); self.tail.setLineWrapMode(QTextEdit.NoWrap)
         rv.addWidget(self.tail, 1)
         splitter.addWidget(right)
-
-        splitter.setSizes([650, 350])
+        splitter.setSizes([720, 360])
 
         # timers
-        self.tail_timer = QTimer(self)
-        self.tail_timer.timeout.connect(self.refresh_tail)
-        self.tail_timer.start(700)
+        self.tail_timer = QTimer(self); self.tail_timer.timeout.connect(self.refresh_tail); self.tail_timer.start(900)
+        self.start_backend_once()
 
-        # greet
-        self.append_echo(f"Hello, I’m {ECHO_NAME}. Persistent memory: {MEM_PATH.name}\nActive model: {self.brain.model_name}")
+        # keep track of all message bubbles to recompute widths on resize
+        self._all_bubbles: list[Bubble] = []
 
-    # ---- UI helpers ----
-    def append_you(self, text: str):
-        self.chat_layout.insertWidget(self.chat_layout.count()-1, bubble(text, "you"))
-        QTimer.singleShot(0, lambda: self.scroll_area.verticalScrollBar().setValue(self.scroll_area.verticalScrollBar().maximum()))
+    # ---------- sizing ----------
+    def bubble_max_width(self) -> int:
+        vp = self.scroll_area.viewport()
+        return int(vp.width() * 0.66) if vp else 640
 
-    def append_echo(self, text: str):
-        self.chat_layout.insertWidget(self.chat_layout.count()-1, bubble(text, "echo"))
-        QTimer.singleShot(0, lambda: self.scroll_area.verticalScrollBar().setValue(self.scroll_area.verticalScrollBar().maximum()))
+    def resizeEvent(self, event):
+        super().resizeEvent(event)
+        for b in self._all_bubbles:
+            b.refreshWidth()
 
+    # ---------- lifecycle ----------
+    def closeEvent(self, event):
+        self.settings.setValue("geometry", self.saveGeometry())
+        self.settings.setValue("windowState", self.saveState())
+        super().closeEvent(event)
+
+    # ---------- keyboard ----------
+    def eventFilter(self, obj, event):
+        if obj is self.input and event.type() == QEvent.KeyPress:
+            if (event.key() in (Qt.Key_Return, Qt.Key_Enter)) and (event.modifiers() & Qt.ControlModifier):
+                self.media_clicked(); return True
+        return super().eventFilter(obj, event)
+
+    # ---------- message helpers ----------
+    def add_bubble(self, role: str, text: str) -> Bubble:
+        bub = Bubble(role, self.bubble_max_width)
+        bub.setText(text)
+        row = make_row(bub, "right" if role == "you" else "left")
+        self.chat_layout.insertWidget(self.chat_layout.count()-1, row)
+        self._all_bubbles.append(bub)
+        QTimer.singleShot(0, self.scroll_to_bottom)
+        return bub
+
+    def add_tool_card(self, text: str):
+        row = tool_card(text, self.bubble_max_width)
+        self.chat_layout.insertWidget(self.chat_layout.count()-1, row)
+        QTimer.singleShot(0, self.scroll_to_bottom)
+
+    def scroll_to_bottom(self):
+        bar = self.scroll_area.verticalScrollBar()
+        bar.setValue(bar.maximum())
+
+    # ---------- media button behavior ----------
+    def set_media_state(self, running: bool):
+        self._running = running
+        if running:
+            self.media_btn.setText("■")
+            self.media_btn.setToolTip("Stop")
+        else:
+            self.media_btn.setText("↑")
+            self.media_btn.setToolTip("Send")
+
+    def media_clicked(self):
+        if self._running:
+            self.stop_current()
+        else:
+            self.on_send()
+
+    # ---------- send pipeline ----------
     def on_send(self):
         text = self.input.text().strip()
         if not text:
             return
         self.input.clear()
-        self.append_you(text)
-        reply = self.brain.process(text)
-        if reply:
-            self.append_echo(reply)
+        self.add_bubble("you", text)
 
+        # Placeholder assistant bubble ("Thinking") that will typewriter-fill later
+        self._pending_bubble = self.add_bubble("echo", "Thinking")
+        self._start_thinking_animation(self._pending_bubble.label)
+
+        # async brain call
+        self._cancel_flag = {"cancel": False}
+        task = BrainTask(self.brain, text, self._cancel_flag)
+        task.signals.finished.connect(self._on_finished)
+        task.signals.failed.connect(self._on_failed)
+        self.set_media_state(True)
+        self.thread_pool.start(task)
+
+    def stop_current(self):
+        if not self._running:
+            return
+        self._cancel_flag["cancel"] = True
+        self._stop_thinking_animation()
+        if self._pending_bubble:
+            self._pending_bubble.setText("(stopped)")
+        self.set_media_state(False)
+
+    # ---------- thinking animation ----------
+    def _start_thinking_animation(self, label: QLabel):
+        self._anim_timer = QTimer(self)
+        dots = {"n": 0}
+        def tick():
+            dots["n"] = (dots["n"] + 1) % 4
+            label.setText("Thinking" + "." * dots["n"])
+            self.scroll_to_bottom()
+        self._anim_timer.timeout.connect(tick)
+        self._anim_timer.start(350)
+
+    def _stop_thinking_animation(self):
+        if self._anim_timer:
+            self._anim_timer.stop()
+            self._anim_timer = None
+
+    # ---------- finish handlers ----------
+    def _on_finished(self, reply: str):
+        if self._cancel_flag.get("cancel"):
+            return
+        self._stop_thinking_animation()
+        self.set_media_state(False)
+
+        # Split out tool card if our sentinel is present
+        tool_text = None
+        if "\n<<TOOL_CARD>>\n" in reply:
+            msg, tool_text = reply.split("\n<<TOOL_CARD>>\n", 1)
+        else:
+            msg = reply
+
+        # Typewriter effect into the pending bubble
+        if not self._pending_bubble:
+            self.add_bubble("echo", msg)
+        else:
+            self._typewriter(self._pending_bubble, msg)
+
+        if tool_text:
+            # show as separate compact card under the assistant message
+            self.add_tool_card(tool_text)
+
+    def _on_failed(self, err: str):
+        if self._cancel_flag.get("cancel"):
+            return
+        self._stop_thinking_animation()
+        self.set_media_state(False)
+        if self._pending_bubble:
+            self._pending_bubble.setText(f"Error: {err}")
+        else:
+            self.add_bubble("echo", f"Error: {err}")
+
+    # ---------- typewriter ----------
+    def _typewriter(self, bubble: Bubble, full_text: str):
+        # If empty, just show blank and bail
+        if not full_text:
+            bubble.setText("(no response)")
+            return
+        bubble.setText("")  # start empty
+        idx = {"i": 0}
+        self._type_timer = QTimer(self)
+        def step():
+            i = idx["i"]
+            i += max(1, len(full_text)//200)  # speed scales with length
+            if i >= len(full_text):
+                bubble.setText(full_text)
+                self._type_timer.stop()
+            else:
+                bubble.setText(full_text[:i])
+                idx["i"] = i
+            self.scroll_to_bottom()
+        self._type_timer.timeout.connect(step)
+        self._type_timer.start(18)  # smooth typing
+
+    # ---------- tail ----------
     def refresh_tail(self):
         try:
-            raw = THINK_LOG.read_text(encoding="utf-8")
+            with THINK_LOG.open("r", encoding="utf-8", errors="ignore") as f:
+                f.seek(0, os.SEEK_END)
+                size = f.tell()
+                chunk = 16000
+                f.seek(max(0, size - chunk))
+                raw = f.read()
         except FileNotFoundError:
             raw = "(no thinking yet)"
 
-        text = raw[-12000:]
-
-        # only update if changed to avoid flicker
-        if getattr(self, "_last_tail", None) == text:
+        if getattr(self, "_last_tail", None) == raw:
             return
-        self._last_tail = text
+        self._last_tail = raw
+        self.tail.setPlainText(raw); self.tail.moveCursor(QTextCursor.End)
 
-        self.tail.setPlainText(text)
-        self.tail.moveCursor(QTextCursor.End)
-
+    # ---------- model controls ----------
     def refresh_models(self):
         names = get_installed_models()
         self.model_combo.clear()
@@ -363,7 +573,6 @@ class EchoWindow(QMainWindow):
         else:
             for n in names:
                 self.model_combo.addItem(n)
-            # try select current
             idx = self.model_combo.findText(self.brain.model_name)
             if idx >= 0:
                 self.model_combo.setCurrentIndex(idx)
@@ -371,44 +580,60 @@ class EchoWindow(QMainWindow):
     def set_active_model(self):
         name = self.model_combo.currentText().strip()
         if not name or name.startswith("("):
-            self.append_echo("No installed models found. Try pulling one.")
-            return
-        msg = self.brain.switch_model(name)
-        self.append_echo(msg)
+            self.add_bubble("echo", "No installed models found. Try pulling one."); return
+        msg = self.brain.switch_model(name); self.add_bubble("echo", msg)
+
+    # ---------- backend + pull ----------
+    def start_backend_once(self):
+        if not MAIN_PY.exists():
+            self.add_bubble("echo", "Note: main.py not found next to echo_qt.py; skipping auto-run."); return
+        os.environ["ECHO_LAUNCHED_FROM_UI"] = "1"
+        try:
+            QProcess.startDetached(sys.executable, [str(MAIN_PY), "--ui"], str(HERE))
+            self.add_bubble("echo", "Started background brain.")
+        except Exception as e:
+            self.add_bubble("echo", f"Could not start main.py automatically: {e}")
 
     def pull_model_clicked(self):
         name = self.pull_edit.text().strip()
         if not name:
-            self.append_echo("Enter a model tag to pull, e.g., llama3:8b")
-            return
-        self.append_echo(f"Pulling {name}… this may take a while.")
-        threading.Thread(target=self._pull_worker, args=(name,), daemon=True).start()
+            self.add_bubble("echo", "Enter a model tag to pull, e.g., llama3:8b"); return
+        self.add_bubble("echo", f"Pulling {name}…"); self.run_pull_process(name)
 
-    def _pull_worker(self, name: str):
+    def run_pull_process(self, name: str):
+        self.pull_proc = QProcess(self)
+        self.pull_proc.setProgram("ollama"); self.pull_proc.setArguments(["pull", name])
+        self.pull_proc.setProcessChannelMode(QProcess.MergedChannels)
+        self.pull_proc.readyReadStandardOutput.connect(
+            lambda: self._on_pull_output(
+                self.pull_proc.readAllStandardOutput().data().decode("utf-8", "ignore")
+            )
+        )
+        self.pull_proc.finished.connect(lambda code, _status: self._on_pull_finished(code, name))
         try:
-            # Use shell=True on Windows so 'ollama' is found in PATH
-            proc = subprocess.Popen(["ollama", "pull", name], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, shell=True)
-            for line in proc.stdout:
-                self.append_echo(line.rstrip("\n"))
-            code = proc.wait()
-            if code == 0:
-                self.append_echo(f"Pull complete: {name}")
-                self.refresh_models()
-            else:
-                self.append_echo(f"Pull failed (exit {code}) for {name}")
-        except FileNotFoundError:
-            self.append_echo("'ollama' not found in PATH")
-        except Exception as e:
-            self.append_echo(f"Pull error: {e}")
+            self.pull_proc.start()
+        except Exception:
+            self.add_bubble("echo", "'ollama' not found in PATH. Install or add to PATH.")
 
+    def _on_pull_output(self, text: str):
+        text = text.strip()
+        if text:
+            self.add_bubble("echo", text)
 
+    def _on_pull_finished(self, code: int, name: str):
+        if code == 0:
+            self.add_bubble("echo", f"Pull complete: {name}"); self.refresh_models()
+        else:
+            self.add_bubble("echo", f"Pull failed (exit {code}) for {name}")
+
+# --------------------- app entry ---------------------
 def main():
     app = QApplication(sys.argv)
+    app.setFont(QFont("Inter", 11))
     app.setStyleSheet(DARK_QSS)
     win = EchoWindow()
     win.show()
     sys.exit(app.exec())
-
 
 if __name__ == "__main__":
     main()
