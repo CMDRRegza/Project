@@ -25,3 +25,5 @@
   "thought": "greeting", 
   "action": {"name": "none", "args": {}}, 
   "chat": "Hello! It seems like you're trying to start a conversation. How can I help you today?"}
+[2025-08-16 10:05:57] observed_input -> hello bro
+[2025-08-16 10:06:01] planned_reply -> {"thought":"","chat":"{\"thought\":\"greet\",\"action\":{\"name\":\"none\",\"args\":{\"path\":\"\",\"text\":\"\"}},\"chat\":\"Hello! How can I help you today?\"}","action":{"name":"none","args":{}}}

@@ -48,6 +48,19 @@ class EchoBrain:
         except Exception as e:
             return f"Model error: {e}"
 
+        # MINIFY the raw proposal for the thinking log so it never pretty-prints
+        try:
+            _min = json.dumps(proposal, separators=(',',':'))
+            log_thought(f"planned_reply -> {_min}")
+        except Exception:
+            pass
+
+        chat_text, tool_result = execute_action(proposal, user_text=text)
+
+
+        # when logging planned_reply, log the compact JSON instead of the final chat
+        log_thought(f"planned_reply -> {_min}")   
+
         # Use execute_action to parse either {'chat':..., 'action':...} or legacy 'say'
         # inside EchoBrain._run_ai(...)
         chat_text, tool_result = execute_action(proposal, user_text=text)

@@ -1,7 +1,7 @@
 # --- keep your existing imports at top ---
 import json
 import os
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Optional
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -50,69 +50,33 @@ class LLM:
         return "\n".join(parts)
     
     def chat_json(self, system: str, messages: list[dict]) -> dict:
-        """
-        Ask the model for a single JSON object per tool_spec.
-        - Forces Ollama 'format':'json' (when supported)
-        - Uses low-temp defaults
-        - Robustly extracts the last JSON object if the model leaks text
-        """
+        import json
         url = f"{BASE_URL}/api/generate"
-
-        # Build a single prompt for instruct models.
-        # (If you have a chat templating layer, adapt as needed.)
         sys_txt = (system or "").strip()
-        usr_txt = (messages[-1].get("content", "") if messages else "").strip()
-
-        # Conservative, deterministic options
-        options = {
-            "temperature": 0.2,
-            "top_p": 0.9,
-            "num_predict": 512,
-        }
+        usr_txt = (messages[-1].get("content","") if messages else "").strip()
 
         payload = {
             "model": self.model,
             "prompt": f"{sys_txt}\n\nUser: {usr_txt}",
             "stream": False,
-            "format": "json",  # <-- key: ask Ollama to enforce JSON
-            "options": options,
+            "format": "json",  # enforce JSON mode
+            "options": {
+                "temperature": 0.2,
+                "top_p": 0.9,
+                "num_predict": 512,
+            },
         }
 
         raw = self._generate_with_fallback(payload)
 
-        # Try strict parse first
-        import json, re
         try:
             return json.loads(raw)
         except Exception:
-            pass
+            # NO auto-repair; make the model fix itself next turn
+            snippet = (raw or "").replace("\n", " ")[:200]
+            raise RuntimeError(f"No JSON object found in: {snippet}")
 
-        # Fallback: extract the last {...} block
-        try:
-            last = None
-            depth = 0
-            start = -1
-            for i, ch in enumerate(raw):
-                if ch == "{":
-                    if depth == 0:
-                        start = i
-                    depth += 1
-                elif ch == "}":
-                    depth -= 1
-                    if depth == 0 and start != -1:
-                        last = raw[start:i+1]
-            if last:
-                return json.loads(last)
-        except Exception:
-            pass
 
-        # Ultimate fallback: wrap plaintext as a no-op action
-        text = (raw or "").strip()
-        return {
-            "thought": "fallback_plaintext",
-            "chat": text if text else "Hello! How can I help you today?",
-            "action": {"name": "none", "args": {}},
-        }
 
 
     def _generate_with_fallback(self, base_payload: Dict[str, Any]) -> str:

@@ -44,13 +44,12 @@ def read(path_str: str) -> str:
     except UnicodeDecodeError:
         return "(binary or non-utf8 file)"
 
-def write(path_str: str, content: str) -> str:
-    p = _resolve(path_str)
-    if p.exists() and p.is_dir():
-        return "Cannot write to a directory."
-    p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(content, encoding="utf-8")
-    return f"Wrote {len(content)} chars to {p.relative_to(ALLOWED_ROOT)}"
+def write(path: str, text: str) -> str:
+    p = Path(path)
+    if not p.parent.exists():
+        p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(text, encoding="utf-8")
+    return f"Wrote {len(text)} chars to {p.as_posix()}"
 
 def mkdir(path_str: str) -> str:
     p = _resolve(path_str)

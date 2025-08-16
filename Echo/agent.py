@@ -13,6 +13,20 @@ SAFE_ROOT = Path(".").resolve()
 
 # ------------ helpers ------------
 
+def _safe_rel_path(s: str) -> str:
+    s = (s or "").strip()
+    if not s:
+        return ""
+    p = Path(s)
+    if p.is_absolute():
+        raise ValueError("absolute paths not allowed")
+    parts = [q for q in p.parts if q not in (".", "")]
+    if any(q == ".." for q in parts):
+        raise ValueError("parent escapes not allowed")
+    if parts and parts[-1].startswith("."):
+        raise ValueError("dotfiles not allowed")
+    return str(Path(*parts).as_posix())
+
 def _inside_safe_root(p: Path) -> bool:
     try:
         rp = p.resolve()
@@ -39,11 +53,13 @@ def _looks_like_path(s: str) -> bool:
     s = (s or "").strip()
     return bool(re.search(r"[\\/]", s)) or bool(re.search(r"\.[a-z0-9]{1,6}$", s, re.I))
 
+from datetime import datetime
 def _fallback_secret(user_text: str) -> str:
     ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     if "secret" in (user_text or "").lower():
         return f"This is a small private note just for you. — {ts}"
     return f"Hello from Echo — a tiny secret thought at {ts}."
+
 
 def _under_allowed_root(p: Path) -> bool:
     try:
@@ -157,34 +173,60 @@ def _validate_and_coerce(d: Dict[str, Any], user_text: str) -> Dict[str, Any]:
 
 # ------------ public API ------------
 
-def execute_action(proposal_json_or_obj, user_text: str = "") -> Tuple[str, str | None]:
-    """
-    Strictly validate & coerce to the tool_spec.
-    Returns (chat_text, tool_result_or_None).
-    """
-    clean = _validate_and_coerce(_strict_parse(proposal_json_or_obj), user_text=user_text)
+def execute_action(proposal_json_or_obj) -> Tuple[str, str | None]:
+    # Accept dict or string; if string, require valid JSON
+    if isinstance(proposal_json_or_obj, str):
+        obj = json.loads(proposal_json_or_obj)  # let exceptions propagate
+    else:
+        obj = proposal_json_or_obj or {}
 
-    chat = clean["chat"]
-    name = clean["action"]["name"]
-    args = clean["action"]["args"]
+    # Read exact fields; do not invent defaults
+    chat = (obj.get("chat") or obj.get("say") or "").strip()
+    action = obj.get("action")
+    if not isinstance(action, dict):
+        raise ValueError("action missing or not an object")
 
+    name = (action.get("name") or "").strip().lower()
+    args = action.get("args")
+    if not isinstance(args, dict):
+        raise ValueError("args missing or not an object")
+
+    if name not in ALLOWED_TOOLS:
+        raise ValueError(f"unknown tool: {name}")
+
+    # No-op
     if name == "none":
         return chat, None
 
-    if name in ("write", "mkdir") and not ALLOW_WRITES:
-        return chat, "[blocked] tool writes are disabled"
+    # Validate args per tool, no auto-fixes
+    if name == "ls":
+        path = _safe_rel_path(args.get("path", ""))
+        return chat, a_ls(path)
 
-    try:
-        if name == "ls":
-            return chat, (a_ls(args["path"]) or "(empty)")
-        if name == "read":
-            return chat, (a_read(args["path"]) or "(empty)")
-        if name == "write":
-            out = a_write(args["path"], args["text"])
-            return chat, out or f"Wrote {len(args['text'])} chars to {args['path']}"
-        if name == "mkdir":
-            out = a_mkdir(args["path"])
-            return chat, out or f"Created folder {args['path']}"
-        return chat, None
-    except Exception as e:
-        return chat, f"[tool-error] {e}"
+    if name == "read":
+        path = _safe_rel_path(args.get("path", ""))
+        if not path:
+            raise ValueError("read requires a non-empty path")
+        return chat, a_read(path)
+
+    if name == "mkdir":
+        path = _safe_rel_path(args.get("path", ""))
+        if not path:
+            raise ValueError("mkdir requires a non-empty path")
+        return chat, a_mkdir(path)
+
+    if name == "write":
+        path = _safe_rel_path(args.get("path", ""))
+        text = (args.get("text") or "")
+        if not path:
+            raise ValueError("write requires a non-empty path")
+        if not text.strip():
+            raise ValueError("write requires non-empty text")
+        if text.strip() == path:
+            raise ValueError("text must not equal path")
+        # ensure parent dir exists (not a semantics fallback; it’s file I/O hygiene)
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        return chat, a_write(path, text)
+
+    # Should not reach
+    return chat, None
