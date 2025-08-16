@@ -49,12 +49,13 @@ class EchoBrain:
             return f"Model error: {e}"
 
         # Use execute_action to parse either {'chat':..., 'action':...} or legacy 'say'
-        chat_text, tool_result = execute_action(proposal)
+        # inside EchoBrain._run_ai(...)
+        chat_text, tool_result = execute_action(proposal, user_text=text)
         chat_text = self._normalize_chat(chat_text)
         if tool_result:
             return f"{chat_text}\n\n<<TOOL_CARD>>\n{tool_result}"
         return chat_text
-
+    
     # --- command router (only called when input starts with "/") ---
 
     def handle_command(self, cmd: str) -> str:

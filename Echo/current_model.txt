@@ -1,1 +1,1 @@
-gpt-oss:20b
+llama3:8b
