@@ -7,6 +7,11 @@ from actions import ls as a_ls, read as a_read, write as a_write, mkdir as a_mkd
 from tool_spec import TOOL_PROMPT
 from llm import LLM
 from agent import execute_action
+from brain_wrapper import EchoBrain
+from daydream import (
+    bootstrap_daydreamer, shutdown_daydreamer, set_ui_open, mark_user_activity,
+    start_daydream, stop_daydream, start_idle, stop_idle, kill_all, is_killed
+)
 
 
 # ---- LLM helpers ----
@@ -111,6 +116,10 @@ def handle_command(cmd: str, mem: dict, session: list[str], llm):
 
 
 def main():
+    brain = EchoBrain()
+    bootstrap_daydreamer()   # enables auto-idle after 40s
+    set_ui_open(True)        # UI assumed visible; logs at normal verbosity
+
     # initial model (read from file so the UI can change it)
     model_name = read_current_model()
     llm = build_llm(model_name)
@@ -142,6 +151,9 @@ def main():
             except FileNotFoundError:
                 pass
             continue
+
+        # --- reset idle timer whenever user interacts ---
+        mark_user_activity()
 
         # --- hot reload model if UI changed file ---
         try:
@@ -182,6 +194,7 @@ def main():
             for line in preview:
                 print(line)
             print("-------------------------")
+
 
 if __name__ == "__main__":
     main()

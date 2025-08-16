@@ -1,0 +1,1 @@
+print('Hello, Faisal! This is a very simple Python script.')

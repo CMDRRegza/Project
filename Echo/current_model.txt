@@ -1,1 +1,1 @@
-llama3:8b
+ifioravanti/neuralbeagle14-7b:7b

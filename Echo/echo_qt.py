@@ -17,6 +17,7 @@ from brain_wrapper import EchoBrain
 from ui_bubbles import Bubble, make_row, tool_card, start_dots, typewriter
 import json
 import os
+from daydream import bootstrap_daydreamer, shutdown_daydreamer, set_ui_open, mark_user_activity
 
 os.environ.setdefault("OLLAMA_NUM_PARALLEL", "1")
 os.environ.setdefault("OLLAMA_KEEP_ALIVE", "5m")
@@ -88,6 +89,9 @@ class EchoWindow(QMainWindow):
         self._type_timer = None
 
         self.brain = EchoBrain()
+        bootstrap_daydreamer()   # enable auto-idle watcher in this process
+        set_ui_open(True)        # UI is visible → normal (not quiet) logs
+
 
         splitter = QSplitter(Qt.Horizontal); self.setCentralWidget(splitter)
 
@@ -265,6 +269,7 @@ class EchoWindow(QMainWindow):
     def on_send(self):
         text = self.input.text().strip()
         if not text: return
+        mark_user_activity()
         self.input.clear()
         self.add_bubble("you", text)
         self._pending_bubble = self.add_bubble("echo", "Thinking")
@@ -275,6 +280,21 @@ class EchoWindow(QMainWindow):
         task.signals.failed.connect(self._on_failed)
         self.set_media_state(True)
         self.thread_pool.start(task)
+        
+    def closeEvent(self, event):
+        # UI closed → go quiet (still allowed to work if running) and stop watcher
+        set_ui_open(False)
+        shutdown_daydreamer()
+        super().closeEvent(event)
+        
+    def eventFilter(self, obj, event):
+        if obj is self.input and event.type() == QEvent.KeyPress:
+            # >>> ADD THIS LINE (optional) <<<
+            mark_user_activity()
+
+            if (event.key() in (Qt.Key_Return, Qt.Key_Enter)) and (event.modifiers() & Qt.ControlModifier):
+                self.media_clicked(); return True
+        return super().eventFilter(obj, event)
 
     def stop_current(self):
         try:
@@ -354,15 +374,10 @@ class EchoWindow(QMainWindow):
         msg = self.brain.switch_model(name); self.add_bubble("echo", msg)
 
     # backend + pull
-    def start_backend_once(self):
-        if not MAIN_PY.exists():
-            self.add_bubble("echo", "Note: main.py not found next to echo_qt.py; skipping auto-run."); return
-        os.environ["ECHO_LAUNCHED_FROM_UI"] = "1"
-        try:
-            QProcess.startDetached(sys.executable, [str(MAIN_PY), "--ui"], str(HERE))
-            self.add_bubble("echo", "Started background brain.")
-        except Exception as e:
-            self.add_bubble("echo", f"Could not start main.py automatically: {e}")
+    def start_backend_once(self) -> None:
+        # Option A: run everything in the Qt process (no separate main.py).
+        self.add_bubble("echo", "Background process disabled (Option A). Running in-process.")
+        return
 
     def pull_model_clicked(self):
         name = self.pull_edit.text().strip()

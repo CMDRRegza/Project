@@ -8,6 +8,11 @@ from actions import ls as a_ls, read as a_read, write as a_write, mkdir as a_mkd
 from tool_spec import TOOL_PROMPT
 from llm import LLM
 from agent import execute_action
+from actions import _resolve as _sandbox_resolve
+from config import ALLOWED_ROOT
+from memory import append_history
+from profile_manager import get_profile
+from mood import get_mood
 
 def read_current_model() -> str:
     try: return CURRENT_MODEL_FILE.read_text(encoding="utf-8").strip()
@@ -41,33 +46,75 @@ class EchoBrain:
         return t
 
     def _run_ai(self, text: str) -> str:
-        system_msg = {"role": "system", "content": TOOL_PROMPT}
-        user_msg = {"role": "user", "content": text}
+        # --- inject Echo identity + mood before tool spec ---
+        prof = {}
         try:
-            proposal = self.llm.chat_json(system=TOOL_PROMPT, messages=[system_msg, user_msg])
-        except Exception as e:
-            return f"Model error: {e}"
+            prof = get_profile() or {}
+        except Exception:
+            prof = {}
 
-        # MINIFY the raw proposal for the thinking log so it never pretty-prints
         try:
-            _min = json.dumps(proposal, separators=(',',':'))
+            mood = get_mood()
+        except Exception:
+            mood = {"state": "neutral", "valence": 0.0, "relax": False}
+
+        identity = (
+            f"Your name is {prof.get('name','Echo')}. You assist {prof.get('owner','the user')}.\n"
+            f"Main goal: {prof.get('main_goal','Help the user effectively')}.\n"
+            f"Personality: {prof.get('personality','Helpful and concise')}.\n"
+            f"Current mood: {mood.get('state','neutral')} (valence={mood.get('valence',0.0)}; relax={mood.get('relax',False)})."
+        )
+
+        # Stronger system message: identity first, then tools
+        system_content = f"{identity}\n\n{TOOL_PROMPT}"
+        system_msg = {"role": "system", "content": system_content}
+        user_msg = {"role": "user", "content": text}
+
+        try:
+            proposal = self.llm.chat_json(system=system_content, messages=[system_msg, user_msg])
+        except Exception as e:
+            proposal = {
+                "thought": "error",
+                "chat": f"Model error: {e}",
+                "action": {"name": "none", "args": {}}
+            }
+
+        # Log the raw model proposal (minified JSON)
+        try:
+            _min = json.dumps(proposal, separators=(',', ':'))
             log_thought(f"planned_reply -> {_min}")
         except Exception:
             pass
 
-        chat_text, tool_result = execute_action(proposal, user_text=text)
+        # Execute the proposed action (respecting your strict agent rules)
+        chat_text, tool_result = execute_action(proposal)
 
-
-        # when logging planned_reply, log the compact JSON instead of the final chat
-        log_thought(f"planned_reply -> {_min}")   
-
-        # Use execute_action to parse either {'chat':..., 'action':...} or legacy 'say'
-        # inside EchoBrain._run_ai(...)
-        chat_text, tool_result = execute_action(proposal, user_text=text)
+        # Normalize chat text length just in case
         chat_text = self._normalize_chat(chat_text)
+
+        result = {
+            "thought": proposal.get("thought", ""),
+            "chat": chat_text,
+            "action": proposal.get("action", {"name": "none", "args": {}})
+        }
         if tool_result:
-            return f"{chat_text}\n\n<<TOOL_CARD>>\n{tool_result}"
-        return chat_text
+            result["tool_result"] = tool_result
+
+        return json.dumps(result, ensure_ascii=False)
+
+
+    def process_input(self, user_text: str):
+        from agent import handle_command
+        cmd_result = handle_command(user_text)
+        if cmd_result is not None:
+            try:
+                _min = json.dumps(cmd_result, separators=(',', ':'))
+                log_thought(f"planned_reply -> {_min}")
+            except Exception:
+                pass
+            return json.dumps(cmd_result, ensure_ascii=False)
+
+        return self._run_ai(user_text)
     
     # --- command router (only called when input starts with "/") ---
 
@@ -85,18 +132,46 @@ class EchoBrain:
             return f"Noted. I’ll remember {k} = {v}."
 
         if head == "recall":
-            if not self.mem["facts"]:
-                return "I don't have any facts yet."
-            items = ", ".join(f"{k}={v}" for k, v in self.mem["facts"].items())
-            return "I remember: " + items
-
+            from memory import recall_history
+            hist = recall_history(5)  # get last 5
+            if not hist:
+                return "No recent memories."
+            return "\n".join(
+                f"[{h['time']}] You: {h['input']} → Echo: {h['reply']} (action={h['action']['name']})"
+                for h in hist
+            )
+            
+        if head == "dream":
+            if tail.lower() in ("on", "start"):
+                from daydream import start_daydream
+                start_daydream(self.llm, interval_seconds=45, allow_actions=False)
+                return "Daydreaming started."
+            if tail.lower() in ("off", "stop"):
+                from daydream import stop_daydream
+                stop_daydream()
+                return "Daydreaming stopped."
+            return "Usage: /dream on|off"
+        
         if head == "diag":
             try:
                 self.llm.warmup()
             except Exception:
                 pass
             dev = getattr(self.llm, "last_device", "unknown")
-            return f"Diagnostics: device={dev}, model={self.llm.model}"
+            return f"Diagnostics: device={dev}, model={self.llm.model}\nSandbox: {ALLOWED_ROOT}"
+        
+        if head == "where":
+            try:
+                p = _sandbox_resolve(tail or "")
+                loc = f"{p}"
+                rel = f"{p.relative_to(ALLOWED_ROOT)}" if p != ALLOWED_ROOT else "."
+                exists = ("exists" if p.exists() else "missing")
+                kind = ("dir" if p.is_dir() else "file" if p.is_file() else "unknown")
+                return f"{rel} -> {loc}\nStatus: {exists}, {kind}"
+            except Exception as e:
+                return f"Resolve error: {e}"
+
+
 
         if head == "goal":
             if not tail:
@@ -142,27 +217,53 @@ class EchoBrain:
 
     # --- unified entry point for UI/console ---
 
-    def process(self, user_text: str) -> str:
-        u = user_text.strip()
-        if not u:
-            return ""
+    def process(self, observed_input: str):
+        """
+        Main loop: send user input + context to LLM, log reply, and save to memory.
+        """
+        from logger import log_thought
+        from memory import append_history
+        import json
 
-        # log input
-        if u.lower() != "clearlog":
-            self.session.append(f"YOU: {u}")
-            log_thought(f"observed_input -> {u}")
-        else:
-            self.session.append(f"YOU: {u}")
+        # log observed input
+        log_thought(f"observed_input -> {observed_input}")
 
-        # slash-gated commands; otherwise go to AI
-        if u.startswith("/"):
-            reply = self.handle_command(u[1:])
-        else:
-            reply = self._run_ai(u)
+        # check if user typed a slash-command like /recall
+        if observed_input.strip().startswith("/"):
+            cmd_result = self.handle_command(observed_input[1:])
+            log_thought(f"planned_reply -> {cmd_result}")
+            append_history(
+                user_input=observed_input,
+                reply=str(cmd_result),
+                action={"name": "command", "args": {}},
+            )
+            return json.dumps({
+                "thought": "command",
+                "chat": cmd_result,
+                "action": {"name": "none", "args": {}}
+            }, ensure_ascii=False)
 
-        # log output
-        self.session.append(f"ECHO: {reply}")
-        if u.lower() != "clearlog":
-            log_thought(f"planned_reply -> {reply}")
-        return reply
+        # run LLM to get planned reply
+        planned_reply = self._run_ai(observed_input)
+
+        # log planned reply
+        log_thought(f"planned_reply -> {planned_reply}")
+
+        # parse the reply to extract the action
+        try:
+            reply_data = json.loads(planned_reply)
+            action = reply_data.get("action", {"name": "none", "args": {}})
+        except Exception:
+            action = {"name": "none", "args": {}}
+
+        # record to memory.json (short-term history)
+        append_history(
+            user_input=observed_input,
+            reply=str(planned_reply),
+            action=action,
+        )
+
+        return planned_reply
+
+
 
