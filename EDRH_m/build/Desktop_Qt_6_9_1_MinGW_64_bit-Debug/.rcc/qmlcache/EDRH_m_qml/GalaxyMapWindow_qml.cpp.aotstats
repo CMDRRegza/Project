@@ -1,0 +1,60 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "",
+                        "functionName": "onClosing",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 191,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "onActivated",
+                        "line": 34
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/GalaxyMapWindow.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

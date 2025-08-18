@@ -1,0 +1,226 @@
+{
+    "classes": [
+        {
+            "className": "ConfigManager",
+            "lineNumber": 9,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 10,
+                    "name": "loadConfig",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "saveConfig",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "verified",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "setJournalVerified",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "commanderName",
+                    "notify": "commanderNameChanged",
+                    "read": "commanderName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "journalPath",
+                    "notify": "journalPathChanged",
+                    "read": "journalPath",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "currentSystem",
+                    "notify": "currentSystemChanged",
+                    "read": "currentSystem",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "supabaseUrl",
+                    "notify": "supabaseUrlChanged",
+                    "read": "supabaseUrl",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "supabaseKey",
+                    "notify": "supabaseKeyChanged",
+                    "read": "supabaseKey",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "supabaseAuthConfirmation",
+                    "notify": "supabaseAuthConfirmationChanged",
+                    "read": "supabaseAuthConfirmation",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "journalVerified",
+                    "notify": "journalVerifiedChanged",
+                    "read": "journalVerified",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "isAdmin",
+                    "notify": "isAdminChanged",
+                    "read": "isAdmin",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "ConfigManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "commanderNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "journalPathChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "currentSystemChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "supabaseUrlChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "supabaseKeyChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "supabaseAuthConfirmationChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "journalVerifiedChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "isAdminChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "configLoaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "configError",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "configmanager.h",
+    "outputRevision": 69
+}

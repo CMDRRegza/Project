@@ -1,0 +1,1140 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 13,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 12,
+                        "durationMicroseconds": 328,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "title",
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "showSystemView",
+                        "line": 568
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 403,
+                        "errorMessage": "Cannot access value for name journalMonitor",
+                        "functionName": "initializeApplication",
+                        "line": 623
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "authenticationComplete",
+                        "line": 644
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "showAuthErrorDialog",
+                        "line": 670
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "showConfirmationDialog",
+                        "line": 699
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "theme",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 12,
+                        "errorMessage": "Cannot access value for name mainBgColor",
+                        "functionName": "color",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 49
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 77,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 67
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 77,
+                        "durationMicroseconds": 241,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 68
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 77
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "radius",
+                        "line": 78
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 193,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 149,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 80
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "to",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "duration",
+                        "line": 88
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 89
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 98,
+                        "errorMessage": "",
+                        "functionName": "to",
+                        "line": 92
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "duration",
+                        "line": 93
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 94
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 104
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 105
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "radius",
+                        "line": 106
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "opacity",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 109
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 146,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 110
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 114
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 81,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 115
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 81,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 18,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name splashComplete",
+                        "functionName": "visible",
+                        "line": 132
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "",
+                        "functionName": "flags",
+                        "line": 133
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "modality",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 138
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 139
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 142
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 485,
+                        "errorMessage": "Cannot generate efficient code for LoadClosure",
+                        "functionName": "onSplashComplete",
+                        "line": 163
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 150
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 878,
+                        "errorMessage": "Cannot access value for name supabaseClient",
+                        "functionName": "onCompleted",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 14,
+                        "errorMessage": "Cannot access value for name splashComplete",
+                        "functionName": "visible",
+                        "line": 192
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name splashComplete",
+                        "functionName": "opacity",
+                        "line": 193
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 191
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 200
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 207
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name borderColor",
+                        "functionName": "color",
+                        "line": 211
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 215
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 216
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 217
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name secondaryBgColor",
+                        "functionName": "color",
+                        "line": 221
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 231
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name borderColor",
+                        "functionName": "color",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 238
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 239
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 240
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 50,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 241
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 242
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "currentIndex",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 252
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 253
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 254
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 255
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 266
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 325
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot access value for name secondaryBgColor",
+                        "functionName": "color",
+                        "line": 327
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 323
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 324
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 303,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 333
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot access value for name textMuted",
+                        "functionName": "color",
+                        "line": 334
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 332
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 345
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 346
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name dangerColor",
+                        "functionName": "color",
+                        "line": 347
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "visible",
+                        "line": 349
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 342
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 343
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 353
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 315,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onClicked",
+                        "line": 387
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 363
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 216,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "right",
+                        "line": 364
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 182,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "rightMargin",
+                        "line": 366
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 373
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 14,
+                        "errorMessage": "Cannot access value for name borderColor",
+                        "functionName": "color",
+                        "line": 375
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 380
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 381
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name textColor",
+                        "functionName": "color",
+                        "line": 382
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 92,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 383
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 384
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 400
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "",
+                        "functionName": "onOpenGalaxyMapWindow",
+                        "line": 401
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "parent",
+                        "line": 412
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 98,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 413
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 155,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 414
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "closePolicy",
+                        "line": 419
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 14,
+                        "errorMessage": "Cannot access value for name cardBgColor",
+                        "functionName": "color",
+                        "line": 426
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 12,
+                        "errorMessage": "Cannot access value for name accentColor",
+                        "functionName": "color",
+                        "line": 429
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 433
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot access value for name accentColor",
+                        "functionName": "color",
+                        "line": 440
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 442
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Cannot access value for name textColor",
+                        "functionName": "color",
+                        "line": 448
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 451
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 452
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 453
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 105,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 473
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 458
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 461
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 466
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 469
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 470
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 482
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onShowMessage",
+                        "line": 484
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onShowError",
+                        "line": 494
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onShowSystemPopup",
+                        "line": 500
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 141,
+                        "errorMessage": "",
+                        "functionName": "onOpenGalaxyMapWindow",
+                        "line": 504
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onDatabaseDownloadProgress",
+                        "line": 510
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 9,
+                        "durationMicroseconds": 266,
+                        "errorMessage": "",
+                        "functionName": "onDatabaseDownloadComplete",
+                        "line": 516
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "Cannot access value for name supabaseClient",
+                        "functionName": "target",
+                        "line": 525
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onDatabaseSyncStatusChanged",
+                        "line": 527
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onDatabaseSyncProgress",
+                        "line": 534
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onDatabaseSyncComplete",
+                        "line": 541
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "Cannot find name appReady",
+                        "functionName": "onTriggered",
+                        "line": 795
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "method authenticationComplete cannot be resolved.",
+                        "functionName": "onTriggered",
+                        "line": 810
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 108,
+                        "errorMessage": "Cannot access value for name supabaseClient",
+                        "functionName": "onTriggered",
+                        "line": 823
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 196,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onTriggered",
+                        "line": 837
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 165,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onTriggered",
+                        "line": 848
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 119,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onImageSelected",
+                        "line": 860
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "onImageSelected",
+                        "line": 860
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "onCancelled",
+                        "line": 865
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 872
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onRequestImagePicker",
+                        "line": 873
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name supabaseClient",
+                        "functionName": "target",
+                        "line": 881
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onPresetImageFound",
+                        "line": 882
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemImageSet",
+                        "line": 887
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

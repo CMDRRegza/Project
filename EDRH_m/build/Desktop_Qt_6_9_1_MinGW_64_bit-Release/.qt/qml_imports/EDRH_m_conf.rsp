@@ -1,0 +1,14 @@
+-rootPath
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m
+-cmake-output
+-output-file
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Release/.qt/qml_imports/EDRH_m_conf.cmake
+-importPath
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Release/EDRH
+-importPath
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Release
+-importPath
+C:/Qt/6.9.1/mingw_64/qml
+-qrcFiles
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Release/.qt/rcc/qmake_EDRH.qrc
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Release/.qt/rcc/EDRH_m_raw_qml_0.qrc

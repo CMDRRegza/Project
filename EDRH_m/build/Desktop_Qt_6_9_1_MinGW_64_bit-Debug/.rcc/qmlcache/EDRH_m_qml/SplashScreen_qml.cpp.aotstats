@@ -1,0 +1,564 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "updateProgress",
+                        "line": 270
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 272,
+                        "errorMessage": "Cannot generate efficient code for LoadClosure",
+                        "functionName": "complete",
+                        "line": 277
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 19
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 33
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 73,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 73,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 36
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 169,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 44
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "radius",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 295,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 47
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 265,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 249,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 49
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "to",
+                        "line": 54
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "duration",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "to",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "",
+                        "functionName": "duration",
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 61
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 70
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 83
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 91
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 102
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 101
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 114
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 115
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 78,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 77,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 117
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 123
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 133
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 165
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 157
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 158
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 168
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 33,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SplashScreen.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 173
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 176
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 101,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 177
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 137,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 187
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 207
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 203
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "transformOrigin",
+                        "line": 216
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 214
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 215
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "loops",
+                        "line": 222
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 223
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "opacity",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "transformOrigin",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Cannot access value for name index",
+                        "functionName": "rotation",
+                        "line": 238
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 119,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: conversion to QVariant -> QQuickAnchorLine stored as QVariant",
+                        "functionName": "horizontalCenter",
+                        "line": 235
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: conversion to QVariant -> QQuickAnchorLine stored as QVariant",
+                        "functionName": "top",
+                        "line": 236
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 246
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "onFinished",
+                        "line": 263
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 261
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 109,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 291
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onCompleted",
+                        "line": 295
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SplashScreen.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

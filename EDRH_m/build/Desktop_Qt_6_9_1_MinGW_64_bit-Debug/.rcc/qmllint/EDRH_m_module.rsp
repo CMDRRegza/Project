@@ -1,0 +1,10 @@
+-I
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug
+-I
+C:/Qt/6.9.1/mingw_64/qml
+--resource
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/.qt/rcc/qmake_EDRH.qrc
+--resource
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/.qt/rcc/EDRH_m_raw_qml_0.qrc
+--module
+EDRH

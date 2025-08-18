@@ -1,0 +1,264 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "ImageLoader",
+            "lineNumber": 14,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "loadImage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "isCloned": true,
+                    "name": "loadImage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "loadPresetImage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "includeRichard",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "loadPresetImagesFromDatabase",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 13,
+                    "isCloned": true,
+                    "name": "loadPresetImagesFromDatabase",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "getCachedImagePath",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "getCachedImageFileUrl",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "hasPresetImage",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "getPresetImageUrl",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "getPresetImageFileUrl",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "name": "clearCache",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 20,
+                    "name": "preloadCommonImages",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "ImageLoader",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "imagePath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "imageLoaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "error",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "imageLoadFailed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "imagePath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "presetImageLoaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "presetImages",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "presetImagesFromDatabaseLoaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "presetImagesReady",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "cacheCleared",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "presetImages",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "handlePresetImagesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 7,
+                    "name": "handleImageDownloaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QNetworkReply::NetworkError"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "handleNetworkError",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "imageloader.h",
+    "outputRevision": 69
+}

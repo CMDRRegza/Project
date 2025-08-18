@@ -1,0 +1,7 @@
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_claimmanager.cpp.json
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_configmanager.cpp.json
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_edrhcontroller.cpp.json
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_galaxymaprenderer.cpp.json
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_imageloader.cpp.json
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_journalmonitor.cpp.json
+C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/EDRH_m_autogen/include/../EWIEGA46WW/moc_supabaseclient.cpp.json

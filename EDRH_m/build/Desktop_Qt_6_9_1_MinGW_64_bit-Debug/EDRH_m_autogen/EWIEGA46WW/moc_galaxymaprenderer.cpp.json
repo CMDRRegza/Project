@@ -1,0 +1,339 @@
+{
+    "classes": [
+        {
+            "className": "GalaxyMapRenderer",
+            "lineNumber": 11,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "zoomLevel",
+                    "notify": "zoomLevelChanged",
+                    "read": "zoomLevel",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "qreal",
+                    "user": false,
+                    "write": "setZoomLevel"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "panOffset",
+                    "notify": "panOffsetChanged",
+                    "read": "panOffset",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QPointF",
+                    "user": false,
+                    "write": "setPanOffset"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "backgroundImage",
+                    "notify": "backgroundImageChanged",
+                    "read": "backgroundImage",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setBackgroundImage"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "starSystems",
+                    "notify": "starSystemsChanged",
+                    "read": "starSystems",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "write": "setStarSystems"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "showMainSequence",
+                    "notify": "showMainSequenceChanged",
+                    "read": "showMainSequence",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setShowMainSequence"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "showNeutronStars",
+                    "notify": "showNeutronStarsChanged",
+                    "read": "showNeutronStars",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setShowNeutronStars"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "showWhiteDwarfs",
+                    "notify": "showWhiteDwarfsChanged",
+                    "read": "showWhiteDwarfs",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setShowWhiteDwarfs"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "showBlackHoles",
+                    "notify": "showBlackHolesChanged",
+                    "read": "showBlackHoles",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setShowBlackHoles"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "name": "tooltipsEnabled",
+                    "notify": "tooltipsEnabledChanged",
+                    "read": "tooltipsEnabled",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setTooltipsEnabled"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "name": "hoveredSystem",
+                    "notify": "hoveredSystemChanged",
+                    "read": "hoveredSystem",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QObject*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 10,
+                    "name": "commanderPosition",
+                    "notify": "commanderPositionChanged",
+                    "read": "commanderPosition",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QPointF",
+                    "user": false,
+                    "write": "setCommanderPosition"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 11,
+                    "name": "allCommanderLocations",
+                    "notify": "allCommanderLocationsChanged",
+                    "read": "allCommanderLocations",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false,
+                    "write": "setAllCommanderLocations"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 12,
+                    "name": "showAllCommanders",
+                    "notify": "showAllCommandersChanged",
+                    "read": "showAllCommanders",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setShowAllCommanders"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 13,
+                    "name": "isAdminMode",
+                    "notify": "isAdminModeChanged",
+                    "read": "isAdminMode",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setIsAdminMode"
+                }
+            ],
+            "qualifiedClassName": "GalaxyMapRenderer",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "zoomLevelChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "panOffsetChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "backgroundImageChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "starSystemsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "showMainSequenceChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "showNeutronStarsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "showWhiteDwarfsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "showBlackHolesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "tooltipsEnabledChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "name": "hoveredSystemChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "name": "commanderPositionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "allCommanderLocationsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "showAllCommandersChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 13,
+                    "name": "isAdminModeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "x",
+                            "type": "qreal"
+                        },
+                        {
+                            "name": "y",
+                            "type": "qreal"
+                        },
+                        {
+                            "name": "z",
+                            "type": "qreal"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "systemRightClicked",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QQuickPaintedItem"
+                }
+            ]
+        }
+    ],
+    "inputFile": "galaxymaprenderer.h",
+    "outputRevision": 69
+}

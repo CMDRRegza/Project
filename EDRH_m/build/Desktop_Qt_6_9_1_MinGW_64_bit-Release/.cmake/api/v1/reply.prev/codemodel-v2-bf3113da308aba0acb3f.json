@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "EDRH_m",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m-Release-82125cb69ef97e7568e9.json",
+					"name" : "EDRH_m",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_autogen-Release-936714bd2657807ef89d.json",
+					"name" : "EDRH_m_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_autogen_timestamp_deps-Release-b141cf53532c4e31fddf.json",
+					"name" : "EDRH_m_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_copy_qml-Release-def1255e11e8784ef627.json",
+					"name" : "EDRH_m_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_copy_res-Release-d96ece2e0378313656c2.json",
+					"name" : "EDRH_m_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_qmlimportscan-Release-f977c587999c703e4251.json",
+					"name" : "EDRH_m_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_qmllint-Release-6c7301838abf78b22797.json",
+					"name" : "EDRH_m_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_qmllint_json-Release-2b314581500e5417b786.json",
+					"name" : "EDRH_m_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_qmllint_module-Release-09fb0e21c15d717a5e22.json",
+					"name" : "EDRH_m_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "EDRH_m_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-EDRH_m_qmltyperegistration-Release-faa6e18efde47f57b31c.json",
+					"name" : "EDRH_m_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Release-8dd8d9f32aaf4704ce1d.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Release-4d3a1266e97383a2909b.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Release-f6d3a85a0d1c0293982f.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Release-0625b1ed73de1e93a030.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Release-30b14f9998c9c8864766.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_EDRH_m_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_EDRH_m_aotstats_target-Release-b6bad19450b09c4b4063.json",
+					"name" : "module_EDRH_m_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/build/Desktop_Qt_6_9_1_MinGW_64_bit-Release",
+		"source" : "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

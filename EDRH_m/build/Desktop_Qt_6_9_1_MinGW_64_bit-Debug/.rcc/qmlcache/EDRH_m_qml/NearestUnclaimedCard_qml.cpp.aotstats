@@ -1,0 +1,364 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 935,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 9
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 306,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 294,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 70
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 84,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 73
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 75
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 76
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 283,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 85
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 86
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 278,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 93
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 95
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 97
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 106
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 255,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 125
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 98,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 126
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 10,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 132
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 329,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 135
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 137
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 470,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 146
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 68,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 149
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 145
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 174
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 184,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 159
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 7,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 166
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 169
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 114,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 170
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 95,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 171
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 200
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 187
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 192
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 95,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 196
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 197
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/NearestUnclaimedCard.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

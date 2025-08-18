@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="/EDRH/">
+    <file alias="qml/main.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/main.qml</file>
+    <file alias="qml/CommanderInfoCard.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/CommanderInfoCard.qml</file>
+    <file alias="qml/QuickActionsCard.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/QuickActionsCard.qml</file>
+    <file alias="qml/NearestUnclaimedCard.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/NearestUnclaimedCard.qml</file>
+    <file alias="qml/SystemCard.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml</file>
+    <file alias="qml/StatCard.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/StatCard.qml</file>
+    <file alias="qml/NearestSystemsPanel.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/NearestSystemsPanel.qml</file>
+    <file alias="qml/GalaxyMapTab.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/GalaxyMapTab.qml</file>
+    <file alias="qml/GalaxyMapWindow.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/GalaxyMapWindow.qml</file>
+    <file alias="qml/GalaxyActionsCard.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/GalaxyActionsCard.qml</file>
+    <file alias="qml/Theme.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/Theme.qml</file>
+    <file alias="qml/SplashScreen.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SplashScreen.qml</file>
+    <file alias="qml/FilterManager.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/FilterManager.qml</file>
+    <file alias="qml/SystemViewPopup.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml</file>
+    <file alias="qml/FloatingPanel.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/FloatingPanel.qml</file>
+    <file alias="qml/FilterChip.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/FilterChip.qml</file>
+    <file alias="qml/HighPerformanceGalaxyMapTab.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml</file>
+    <file alias="qml/AuthErrorDialog.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/AuthErrorDialog.qml</file>
+    <file alias="qml/ConfirmationDialog.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/ConfirmationDialog.qml</file>
+    <file alias="qml/ImagePicker.qml">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/ImagePicker.qml</file>
+    <file alias="qml/qmldir">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/qmldir</file>
+    <file alias="assets/E47CDFX.png">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/assets/E47CDFX.png</file>
+    <file alias="assets/icon.ico">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/assets/icon.ico</file>
+    <file alias="assets/Dosis-Bold.ttf">C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/assets/Dosis-Bold.ttf</file>
+  </qresource>
+</RCC>
+

@@ -1,0 +1,108 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 122,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "selectedCategories",
+                        "line": 7
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 390,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "availableCategories",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "systemTypeFilters",
+                        "line": 14
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "setSelectedCategories",
+                        "line": 32
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "setSystemTypeFilter",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "toggleCategory",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "resetFilters",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "matchesFilter",
+                        "line": 78
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/FilterManager.qml)::selectedCategories with type QVariant.",
+                        "functionName": "getSelectedCategoriesText",
+                        "line": 173
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/FilterManager.qml)::selectedCategories with type QVariant.",
+                        "functionName": "getFilterSummary",
+                        "line": 183
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onAvailableCategoriesChanged",
+                        "line": 24
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/FilterManager.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

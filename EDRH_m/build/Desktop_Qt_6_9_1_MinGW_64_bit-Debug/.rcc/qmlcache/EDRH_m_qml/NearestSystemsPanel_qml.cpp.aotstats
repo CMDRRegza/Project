@@ -1,0 +1,916 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 180,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "filteredSystemsModel",
+                        "line": 35
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 41,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "displayedSystemsModel",
+                        "line": 40
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1046,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "updateFilteredSystems",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 347,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/NearestSystemsPanel.qml)::filteredSystemsModel with type QVariant.",
+                        "functionName": "updateDisplayedSystems",
+                        "line": 59
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "Instruction \"generate_StoreLocal\" not implemented",
+                        "functionName": "showMoreSystems",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "resetPagination",
+                        "line": 91
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 758,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 110
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 321,
+                        "errorMessage": "method resetPagination cannot be resolved.",
+                        "functionName": "onFiltersChanged",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 21
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onRequestFilterChange",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 98
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "method resetPagination cannot be resolved.",
+                        "functionName": "onNearestSystemsChanged",
+                        "line": 99
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 106
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 111
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 124
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 128
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 147
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 160
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"text\".",
+                        "functionName": "text",
+                        "line": 166
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 187
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 171
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 172
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 6,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 181
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 124,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 182
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 183
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"model\".",
+                        "functionName": "model",
+                        "line": 198
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"currentTextChanged\".",
+                        "functionName": "onCurrentTextChanged",
+                        "line": 257
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 202
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 203
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 209
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 212
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 94,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 214
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"y\".",
+                        "functionName": "y",
+                        "line": 218
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 219
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 45,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"implicitHeight\".",
+                        "functionName": "implicitHeight",
+                        "line": 220
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 49,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot access value for name contentHeight",
+                        "functionName": "implicitHeight",
+                        "line": 225
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 12,
+                        "errorMessage": "Cannot access value for name systemTypeFilter",
+                        "functionName": "model",
+                        "line": 226
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot access value for name systemTypeFilter",
+                        "functionName": "currentIndex",
+                        "line": 227
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 233
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 241
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"highlighted\".",
+                        "functionName": "highlighted",
+                        "line": 250
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 243
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "Cannot access value for name Theme",
+                        "functionName": "color",
+                        "line": 244
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "elide",
+                        "line": 246
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 247
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 253
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 271
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 269
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 274
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fill\".",
+                        "functionName": "fill",
+                        "line": 277
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 281
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "model",
+                        "line": 285
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 65,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "isSeparator",
+                        "line": 288
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 290
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 291
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 292
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "visible",
+                        "line": 297
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 299
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 301
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 298
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "visible",
+                        "line": 305
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 306
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 57,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 307
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 61,
+                        "durationMicroseconds": 98,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 314
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 316
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 324
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 183,
+                        "errorMessage": "Cannot access value for name filterManager",
+                        "functionName": "visible",
+                        "line": 326
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 321
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 331
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 332
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 61,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 334
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "visible",
+                        "line": 340
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 153,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 342
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 343
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 341
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "hoverEnabled",
+                        "line": 352
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "enabled",
+                        "line": 353
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 159,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "onClicked",
+                        "line": 355
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 351
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"policy\".",
+                        "functionName": "policy",
+                        "line": 376
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"policy\".",
+                        "functionName": "policy",
+                        "line": 377
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "boundsBehavior",
+                        "line": 394
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot access value for name displayedSystemsModel",
+                        "functionName": "model",
+                        "line": 396
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 386
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name systemsList",
+                        "functionName": "width",
+                        "line": 399
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 33,
+                        "durationMicroseconds": 138,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "systemData",
+                        "line": 400
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onSystemClicked",
+                        "line": 402
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "onSystemClicked",
+                        "line": 402
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onSystemNameCopyRequested",
+                        "line": 406
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "onSystemNameCopyRequested",
+                        "line": 406
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot access value for name systemsList",
+                        "functionName": "width",
+                        "line": 413
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 29,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name currentlyShowing",
+                        "functionName": "height",
+                        "line": 414
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot access value for name displayedSystemsModel",
+                        "functionName": "text",
+                        "line": 421
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 422
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 418
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 419
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"text\".",
+                        "functionName": "text",
+                        "line": 431
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"visible\".",
+                        "functionName": "visible",
+                        "line": 432
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"enabled\".",
+                        "functionName": "enabled",
+                        "line": 433
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 454
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"centerIn\".",
+                        "functionName": "centerIn",
+                        "line": 429
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 439
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "Cannot access value for name Qt",
+                        "functionName": "color",
+                        "line": 442
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 446
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 128,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 450
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 451
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"visible\".",
+                        "functionName": "visible",
+                        "line": 461
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"color\".",
+                        "functionName": "color",
+                        "line": 463
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"centerIn\".",
+                        "functionName": "centerIn",
+                        "line": 460
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/NearestSystemsPanel.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

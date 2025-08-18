@@ -1,0 +1,3684 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "systemData",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "uploadedImages",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 16,
+                        "errorMessage": "",
+                        "functionName": "onUploadedImagesChanged",
+                        "line": 18
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 29,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "allImages",
+                        "line": 27
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 506,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "canEdit",
+                        "line": 41
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "uploadImageToImgbb",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "calculateDistance",
+                        "line": 150
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1367,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "getCoordinatesText",
+                        "line": 158
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 108,
+                        "errorMessage": "Cannot load property x from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::systemData with type QVariant.",
+                        "functionName": "getDistanceText",
+                        "line": 194
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 675,
+                        "errorMessage": "Cannot load property categoryList from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::systemData with type QVariant.",
+                        "functionName": "getCategoriesText",
+                        "line": 217
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1158,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::uploadedImages with type QVariant.",
+                        "functionName": "getAllImages",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "getPresetImageForCategory",
+                        "line": 287
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 942,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "loadSystemData",
+                        "line": 296
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 333,
+                        "errorMessage": "Cannot load property edited from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::systemData with type QVariant.",
+                        "functionName": "checkIfNeedDefaultData",
+                        "line": 331
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 3337,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::uploadedImages with type QVariant.",
+                        "functionName": "saveEditInfoData",
+                        "line": 362
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "makeImagePrimary",
+                        "line": 437
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "deleteImage",
+                        "line": 470
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "updateImageTitle",
+                        "line": 503
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 7350,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::uploadedImages with type QVariant.",
+                        "functionName": "saveImagesToDatabase",
+                        "line": 516
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 149,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 609
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 610
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "title",
+                        "line": 612
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 15,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "modality",
+                        "line": 613
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 250,
+                        "errorMessage": "",
+                        "functionName": "flags",
+                        "line": 614
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 3581,
+                        "errorMessage": "Cannot load property categoryList from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::systemData with type QVariant.",
+                        "functionName": "updateSystemDisplay",
+                        "line": 1313
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1081,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "performClaimStatusCheck",
+                        "line": 1428
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 115,
+                        "errorMessage": "",
+                        "functionName": "checkClaimStatus",
+                        "line": 1448
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 13,
+                        "errorMessage": "Cannot find name claimCheckCooldown",
+                        "functionName": "onTriggered",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 53
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemStatusUpdated",
+                        "line": 55
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onTakenSystemsReceived",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 120
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 121
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onClaimStatusChanged",
+                        "line": 122
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "theme",
+                        "line": 616
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 200,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onCompleted",
+                        "line": 626
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "onDestruction",
+                        "line": 645
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 654
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onTriggered",
+                        "line": 663
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "parent",
+                        "line": 674
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 675
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 691
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 701
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 705
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 709
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 710
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 731
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 715
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 719
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 724
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 727
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 728
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 739
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 740
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "title",
+                        "line": 747
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "nameFilters",
+                        "line": 748
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fileMode",
+                        "line": 752
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 1229,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onAccepted",
+                        "line": 754
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "parent",
+                        "line": 788
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "closePolicy",
+                        "line": 793
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 789
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 803
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 813
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 822
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 823
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 828
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 827
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 834
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemInformationReceived",
+                        "line": 837
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onEdsmSystemDataReceived",
+                        "line": 1020
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemClaimed",
+                        "line": 1029
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemUnclaimed",
+                        "line": 1060
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemImageSet",
+                        "line": 1098
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 272,
+                        "errorMessage": "Cannot generate efficient code for LoadClosure",
+                        "functionName": "onSystemUpdated",
+                        "line": 1144
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "parent",
+                        "line": 1165
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "closePolicy",
+                        "line": 1171
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1166
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 137,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1180
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1184
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 143,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 1189
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 211,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 1192
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 1194
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 1198
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 1202
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 1203
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 1224
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 1208
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 1212
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 1217
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 84,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 1220
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 1221
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 1232
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 1233
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "parent",
+                        "line": 1240
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "closePolicy",
+                        "line": 1245
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1241
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1257
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 1267
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "contentWidth",
+                        "line": 1276
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 46,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 1273
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 1274
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 1279
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 1280
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 1283
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 1308
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 1290
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 1295
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 1300
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 1304
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 1305
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "method performClaimStatusCheck cannot be resolved.",
+                        "functionName": "onTriggered",
+                        "line": 1422
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1458
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1479
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 1491
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 1492
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1490
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "text",
+                        "line": 1504
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1509
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name category",
+                        "functionName": "text",
+                        "line": 1513
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1517
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "Cannot access value for name canEdit",
+                        "functionName": "visible",
+                        "line": 1544
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "currentIndex",
+                        "line": 1552
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 147,
+                        "errorMessage": "method updateSystemDisplay cannot be resolved.",
+                        "functionName": "onCurrentIndexChanged",
+                        "line": 1555
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "contentHeight",
+                        "line": 1568
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "contentWidth",
+                        "line": 1569
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1566
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 1573
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 1578
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1596
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "text",
+                        "line": 1608
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1612
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 58,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 1616
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onClicked",
+                        "line": 1617
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 12,
+                        "errorMessage": "Type (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem does not have a property color for writing",
+                        "functionName": "onEntered",
+                        "line": 1622
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "Type (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem does not have a property color for writing",
+                        "functionName": "onExited",
+                        "line": 1623
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1615
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1636
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 200,
+                        "errorMessage": "method getDistanceText cannot be resolved.",
+                        "functionName": "text",
+                        "line": 1648
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1665
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 185,
+                        "errorMessage": "method getCoordinatesText cannot be resolved.",
+                        "functionName": "text",
+                        "line": 1677
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1694
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 180,
+                        "errorMessage": "method getCategoriesText cannot be resolved.",
+                        "functionName": "text",
+                        "line": 1706
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 1710
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 42,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 1722
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 65,
+                        "durationMicroseconds": 5930,
+                        "errorMessage": "Cannot access value for name systemInfo",
+                        "functionName": "poiStatusVisible",
+                        "line": 1724
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 57,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 1718
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1776
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 152,
+                        "errorMessage": "Cannot access value for name systemInfo",
+                        "functionName": "color",
+                        "line": 1787
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 144,
+                        "errorMessage": "Cannot access value for name systemInfo",
+                        "functionName": "text",
+                        "line": 1799
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "Cannot access value for name systemInfo",
+                        "functionName": "text",
+                        "line": 1828
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "Cannot access value for name systemInfo",
+                        "functionName": "text",
+                        "line": 1849
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "Cannot access value for name poiName",
+                        "functionName": "visible",
+                        "line": 1867
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name poiName",
+                        "functionName": "text",
+                        "line": 1871
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "Cannot access value for name poiName",
+                        "functionName": "visible",
+                        "line": 1875
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "Cannot access value for name poiDescription",
+                        "functionName": "visible",
+                        "line": 1883
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name poiDescription",
+                        "functionName": "text",
+                        "line": 1890
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 1893
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "Cannot access value for name poiDescription",
+                        "functionName": "visible",
+                        "line": 1894
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1909
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 236,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 1929
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 1927
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 1940
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "text",
+                        "line": 1954
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 56,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1969
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 86,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 1970
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1952
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "color",
+                        "line": 1987
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 1985
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "color",
+                        "line": 1990
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "text",
+                        "line": 1995
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "color",
+                        "line": 1998
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1993
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "color",
+                        "line": 2007
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 2005
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "color",
+                        "line": 2010
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "text",
+                        "line": 2015
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "color",
+                        "line": 2018
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2013
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 53,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 2031
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2038
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2041
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 2060
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 49,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "textFormat",
+                        "line": 2061
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 56,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 2062
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 65,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2055
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2073
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 110,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2094
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2097
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 60,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2098
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 846,
+                        "errorMessage": "Cannot access value for name event",
+                        "functionName": "onWheel",
+                        "line": 2103
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "model",
+                        "line": 2125
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2136
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 277,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 2141
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 60,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "color",
+                        "line": 2144
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 61,
+                        "durationMicroseconds": 114,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "source",
+                        "line": 2152
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 2153
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "Cannot load property status from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2161
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 75,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2157
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 2165
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 79,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2164
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 2173
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 60,
+                        "durationMicroseconds": 168,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "color",
+                        "line": 2176
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 74,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 2179
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 60,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 2180
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "italic",
+                        "line": 2175
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "text",
+                        "line": 2184
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 74,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 2189
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "visible",
+                        "line": 2197
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 64,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onCompleted",
+                        "line": 2205
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 53,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 2211
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 45,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onUploadedImagesChanged",
+                        "line": 2212
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 148,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2218
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot access value for name category",
+                        "functionName": "text",
+                        "line": 2223
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 53,
+                        "durationMicroseconds": 241,
+                        "errorMessage": "Cannot access value for name category",
+                        "functionName": "source",
+                        "line": 2234
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 2239
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 66,
+                        "durationMicroseconds": 284,
+                        "errorMessage": "",
+                        "functionName": "onStatusChanged",
+                        "line": 2242
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 62,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "Cannot load property status from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2255
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2251
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 66,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "running",
+                        "line": 2259
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 75,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2258
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "text",
+                        "line": 2267
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 2272
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 2282
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "Cannot load property AlignCenter from const QMetaObject.",
+                        "functionName": "horizontalAlignment",
+                        "line": 2288
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "contentWidth",
+                        "line": 2300
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 50,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2298
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2299
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 131,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2304
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "Cannot access value for name canEdit",
+                        "functionName": "text",
+                        "line": 2309
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name canEdit",
+                        "functionName": "color",
+                        "line": 2312
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot access value for name canEdit",
+                        "functionName": "visible",
+                        "line": 2324
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 403,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "onClicked",
+                        "line": 2341
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 105,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2320
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 116,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 2327
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 2334
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 2336
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 54,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 2337
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 52,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 2338
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 2371
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 2374
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "text",
+                        "line": 2378
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 2379
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2377
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "color",
+                        "line": 2389
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "color",
+                        "line": 2392
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2396
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 150,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "onClicked",
+                        "line": 2397
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2395
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "text",
+                        "line": 2410
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot access value for name isVisited",
+                        "functionName": "color",
+                        "line": 2411
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2409
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "color",
+                        "line": 2421
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "color",
+                        "line": 2424
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2428
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "onClicked",
+                        "line": 2429
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2427
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "text",
+                        "line": 2442
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot access value for name isDone",
+                        "functionName": "color",
+                        "line": 2443
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2441
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 201,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 2454
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 124,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 2465
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 41,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 2476
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "onForceUIRefresh",
+                        "line": 2477
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "onClaimStatusChanged",
+                        "line": 2480
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 87,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "text",
+                        "line": 2487
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 119,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 2497
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 2506
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2507
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 54,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 2508
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2486
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 53,
+                        "durationMicroseconds": 81,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 2515
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 79,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 2520
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2524
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2535
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 197,
+                        "errorMessage": "Cannot find name poiName",
+                        "functionName": "onCheckedChanged",
+                        "line": 2538
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 209,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 2554
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 50,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 2564
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 50,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "opacity",
+                        "line": 2565
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 144,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2575
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2582
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2591
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "model",
+                        "line": 2593
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2590
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "Cannot load property currentText from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 2603
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 2607
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 2614
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 2621
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 2630
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 60,
+                        "durationMicroseconds": 199,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 2631
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2629
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2671
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2667
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 2676
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 2678
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 2678
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 62,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2682
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 2685
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 77,
+                        "durationMicroseconds": 99,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 2686
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2718
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2714
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 2723
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 2725
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 62,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 2725
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 62,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2729
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 2732
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 77,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 2733
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 46,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 2745
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2754
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 134,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 2755
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 80,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "customPlaceholderText",
+                        "line": 2761
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name poiName",
+                        "functionName": "text",
+                        "line": 2762
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2763
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "readOnly",
+                        "line": 2764
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot find name poiName",
+                        "functionName": "onTextChanged",
+                        "line": 2776
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2759
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 54,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 2768
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "Cannot access value for name event",
+                        "functionName": "onWheel",
+                        "line": 2770
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2785
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "Cannot load property customPlaceholderText from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 2786
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 2788
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 64,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 2790
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2789
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2802
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 186,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 2803
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2806
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2808
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2809
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 52,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2814
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 84,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "customPlaceholderText",
+                        "line": 2815
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name poiDescription",
+                        "functionName": "text",
+                        "line": 2816
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 2817
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2819
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "readOnly",
+                        "line": 2820
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 60,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "Cannot find name poiDescription",
+                        "functionName": "onTextChanged",
+                        "line": 2832
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 58,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 2827
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 70,
+                        "errorMessage": "Cannot access value for name event",
+                        "functionName": "onWheel",
+                        "line": 2829
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2841
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "Cannot load property customPlaceholderText from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 2842
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 2844
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 2847
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 2848
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2845
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2864
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2880
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 188,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 2881
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2884
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2886
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 2887
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 52,
+                        "durationMicroseconds": 170,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 2892
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 84,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "customPlaceholderText",
+                        "line": 2893
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name customSystemInfo",
+                        "functionName": "text",
+                        "line": 2894
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 2895
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2897
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "readOnly",
+                        "line": 2898
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 60,
+                        "durationMicroseconds": 164,
+                        "errorMessage": "Cannot find name customSystemInfo",
+                        "functionName": "onTextChanged",
+                        "line": 2910
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 58,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 2905
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "Cannot access value for name event",
+                        "functionName": "onWheel",
+                        "line": 2907
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 2929
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "Cannot load property customPlaceholderText from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 2930
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 55,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 2932
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 2935
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 59,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 2936
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2933
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 18,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "visible",
+                        "line": 2946
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 53,
+                        "durationMicroseconds": 104,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 2948
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 2954
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 2970
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 50,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 2989
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "onClicked",
+                        "line": 3007
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "Cannot load property pressed from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 2992
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 2999
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 66,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 3003
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 64,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 3004
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3031
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 3033
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "policy",
+                        "line": 3034
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "visible",
+                        "line": 3043
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 61,
+                        "durationMicroseconds": 233,
+                        "errorMessage": "Cannot access value for name category",
+                        "functionName": "source",
+                        "line": 3054
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 3055
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3052
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 60,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "color",
+                        "line": 3065
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 69,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 3060
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 79,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 3061
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 62,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "visible",
+                        "line": 3071
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 64,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 3093
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 66,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 3072
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 68,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 3073
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 63,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 3085
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 78,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 3089
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 76,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 3090
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 56,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "model",
+                        "line": 3103
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 67,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "color",
+                        "line": 3111
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 65,
+                        "durationMicroseconds": 158,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "source",
+                        "line": 3117
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 3118
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3115
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 64,
+                        "durationMicroseconds": 211,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 3126
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 64,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "color",
+                        "line": 3128
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 73,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "bottom",
+                        "line": 3123
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 83,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "horizontalCenter",
+                        "line": 3124
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 67,
+                        "durationMicroseconds": 266,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 3134
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 79,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 3133
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 68,
+                        "durationMicroseconds": 323,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onClicked",
+                        "line": 3144
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3142
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "visible",
+                        "line": 3153
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 3154
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 72,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 3155
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 79,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 3167
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 74,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 3177
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 72,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onClicked",
+                        "line": 3178
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 75,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3176
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 58,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "visible",
+                        "line": 3189
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 3198
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 64,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 3207
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3206
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 101,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "visible",
+                        "line": 3217
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 61,
+                        "durationMicroseconds": 194,
+                        "errorMessage": "",
+                        "functionName": "preferredHeight",
+                        "line": 3223
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 60,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onCompleted",
+                        "line": 3229
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 49,
+                        "durationMicroseconds": 80,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 3235
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 41,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onUploadedImagesChanged",
+                        "line": 3236
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3243
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 52,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "model",
+                        "line": 3256
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 59,
+                        "durationMicroseconds": 574,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 3263
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 67,
+                        "durationMicroseconds": 176,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 3275
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 63,
+                        "durationMicroseconds": 769,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "text",
+                        "line": 3281
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 76,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 3285
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 72,
+                        "durationMicroseconds": 502,
+                        "errorMessage": "Cannot access value for name uploadedImages",
+                        "functionName": "onTextChanged",
+                        "line": 3295
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3279
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 3289
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 78,
+                        "durationMicroseconds": 85,
+                        "errorMessage": "",
+                        "functionName": "acceptedDevices",
+                        "line": 3291
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 3292
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 70,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 3292
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3325
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 1227,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "cachedCanClaim",
+                        "line": 3334
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 878,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "text",
+                        "line": 3350
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 30,
+                        "durationMicroseconds": 685,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "enabled",
+                        "line": 3374
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 3374,
+                        "errorMessage": "Cannot access value for name systemName",
+                        "functionName": "onClicked",
+                        "line": 3439
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 192,
+                        "errorMessage": "",
+                        "functionName": "preferredWidth",
+                        "line": 3331
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 3368
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 25,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "onForceUIRefresh",
+                        "line": 3369
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 3388
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 157,
+                        "errorMessage": "",
+                        "functionName": "onClaimStatusChanged",
+                        "line": 3389
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 130,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 3396
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot access value for name isClaimedByUser",
+                        "functionName": "color",
+                        "line": 3406
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3416
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 3423
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 3424
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 79,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 3429
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 330,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 3430
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 3431
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 46,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 3432
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 3433
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 3435
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 3434
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 3509
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "Cannot load property text from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "text",
+                        "line": 3502
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "Cannot load property font from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml)::parent with type QQuickItem.",
+                        "functionName": "font",
+                        "line": 3504
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 46,
+                        "durationMicroseconds": 198,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 3505
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 3506
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemViewPopup.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

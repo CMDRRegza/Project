@@ -1,0 +1,251 @@
+{
+    "classes": [
+        {
+            "className": "ClaimManager",
+            "lineNumber": 13,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "canClaimSystem",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "claimSystem",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "unclaimSystem",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "isConst": true,
+                    "name": "getCurrentClaim",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "isConst": true,
+                    "name": "hasActiveClaim",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "isConst": true,
+                    "name": "getClaimCount",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "isSystemCompleted",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "getSystemClaimedBy",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "isSystemClaimedByUser",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "name": "refreshClaimData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "getClaimStatusDebug",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "applyLocalClaim",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "applyLocalUnclaim",
+                    "returnType": "void"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "ClaimManager",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "isClaimed",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "claimedBy",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "claimStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "isDone",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "systemDoneStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "currentClaimChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "claimError",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "operation",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "data",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "onDatabaseOperationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "taken",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "onTakenSystemsReceived",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "claimmanager.h",
+    "outputRevision": 69
+}

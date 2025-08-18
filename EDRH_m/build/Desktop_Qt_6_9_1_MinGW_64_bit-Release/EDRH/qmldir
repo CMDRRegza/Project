@@ -1,0 +1,16 @@
+module EDRH
+typeinfo EDRH_m.qmltypes
+prefer :/EDRH/
+CommanderInfoCard 1.0 qml/CommanderInfoCard.qml
+QuickActionsCard 1.0 qml/QuickActionsCard.qml
+NearestUnclaimedCard 1.0 qml/NearestUnclaimedCard.qml
+SystemCard 1.0 qml/SystemCard.qml
+StatCard 1.0 qml/StatCard.qml
+NearestSystemsPanel 1.0 qml/NearestSystemsPanel.qml
+GalaxyMapTab 1.0 qml/GalaxyMapTab.qml
+GalaxyActionsCard 1.0 qml/GalaxyActionsCard.qml
+Theme 1.0 qml/Theme.qml
+SplashScreen 1.0 qml/SplashScreen.qml
+FilterManager 1.0 qml/FilterManager.qml
+SystemViewPopup 1.0 qml/SystemViewPopup.qml
+

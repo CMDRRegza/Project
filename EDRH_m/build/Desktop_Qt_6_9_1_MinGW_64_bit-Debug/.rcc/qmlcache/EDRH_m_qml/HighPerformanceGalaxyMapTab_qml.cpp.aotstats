@@ -1,0 +1,1316 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 246,
+                        "errorMessage": "",
+                        "functionName": "panOffset",
+                        "line": 12
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 5,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "updateSystemsData",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "filteredGalaxyMapSystems",
+                        "line": 63
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 135,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::filteredGalaxyMapSystems with type QVariant.",
+                        "functionName": "onFilteredGalaxyMapSystemsChanged",
+                        "line": 115
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 9748,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "updateFilteredSystems",
+                        "line": 131
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 586,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onCompleted",
+                        "line": 15
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "setTimeout",
+                        "line": 40
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 27,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "method updateFilteredSystems cannot be resolved.",
+                        "functionName": "onFiltersChanged",
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 190,
+                        "errorMessage": "Cannot access value for name filteredGalaxyMapSystems",
+                        "functionName": "onTriggered",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 187,
+                        "errorMessage": "Cannot access value for name filteredGalaxyMapSystems",
+                        "functionName": "onTriggered",
+                        "line": 100
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"width\".",
+                        "functionName": "width",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"height\".",
+                        "functionName": "height",
+                        "line": 235
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"zoomLevel\".",
+                        "functionName": "zoomLevel",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 20,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"panOffset\".",
+                        "functionName": "panOffset",
+                        "line": 238
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"commanderPosition\".",
+                        "functionName": "commanderPosition",
+                        "line": 240
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"showAllCommanders\".",
+                        "functionName": "showAllCommanders",
+                        "line": 253
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"isAdminMode\".",
+                        "functionName": "isAdminMode",
+                        "line": 254
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"allCommanderLocations\".",
+                        "functionName": "allCommanderLocations",
+                        "line": 255
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"starSystems\".",
+                        "functionName": "starSystems",
+                        "line": 258
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 25,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"widthChanged\".",
+                        "functionName": "onWidthChanged",
+                        "line": 280
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"heightChanged\".",
+                        "functionName": "onHeightChanged",
+                        "line": 290
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 231,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::filteredGalaxyMapSystems with type QVariant.",
+                        "functionName": "retryDataUpdate",
+                        "line": 300
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"systemRightClicked\".",
+                        "functionName": "onSystemRightClicked",
+                        "line": 320
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"systemRightClicked\".",
+                        "functionName": "onSystemRightClicked",
+                        "line": 320
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fill\".",
+                        "functionName": "fill",
+                        "line": 232
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "Cannot generate efficient code for LoadClosure",
+                        "functionName": "onCompleted",
+                        "line": 261
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 273
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 13,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "Cannot access value for name updateFilteredSystems",
+                        "functionName": "onGalaxyMapSystemsChanged",
+                        "line": 274
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "acceptedButtons",
+                        "line": 351
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 261,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 356
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 356
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 744,
+                        "errorMessage": "",
+                        "functionName": "onPositionChanged",
+                        "line": 364
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "onPositionChanged",
+                        "line": 364
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 372
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 372
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 2076,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 378
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 378
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 350
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 1379,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 447
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 447
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 483
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 484
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 487
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 75,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 494
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 76,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 495
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 185,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 505
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "top",
+                        "line": 502
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 503
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 512
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 511
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 522
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 520
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 535
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 19,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 531
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 545
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 569
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 39,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 565
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 575
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 574
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 582
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 581
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 593
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 187,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 597
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 596
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 618
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 614
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 624
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 623
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 178,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 631
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 630
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 642
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 175,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 646
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 645
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 667
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 663
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 673
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 672
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 177,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 680
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 679
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 691
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 172,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 695
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 694
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 716
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 712
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 722
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 721
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 177,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 729
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 728
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 740
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 178,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 744
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 743
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 765
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 761
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 771
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 770
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 178,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 778
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 777
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 789
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 225,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 793
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 792
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 68,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 814
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 810
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 820
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 819
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 319,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 827
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 826
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 838
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 842
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 841
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 850
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 186,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "visible",
+                        "line": 858
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 123,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "visible",
+                        "line": 866
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "Cannot load property checked from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 875
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 871
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "visible",
+                        "line": 881
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 880
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 888
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 887
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 102,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 898
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "Cannot load property checked from QQuickItem::parent with type QQuickItem.",
+                        "functionName": "onClicked",
+                        "line": 902
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 901
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 909
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 922
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 924
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 933
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 936
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 67,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 937
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 930
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 932
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 944
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "right",
+                        "line": 941
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 45,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 943
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 952
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 951
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 961
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 962
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fill\".",
+                        "functionName": "fill",
+                        "line": 970
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 121,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 975
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "model",
+                        "line": 979
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 69,
+                        "durationMicroseconds": 179,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "isSeparator",
+                        "line": 982
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 984
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 41,
+                        "durationMicroseconds": 87,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 985
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 235,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 986
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "visible",
+                        "line": 990
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "left",
+                        "line": 991
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 61,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 992
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 65,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 999
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 54,
+                        "durationMicroseconds": 174,
+                        "errorMessage": "Cannot access value for name filterManager",
+                        "functionName": "visible",
+                        "line": 1011
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 63,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1006
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 193,
+                        "errorMessage": "Cannot access value for name modelData",
+                        "functionName": "text",
+                        "line": 1016
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 1020
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot access value for name categoryDropdown",
+                        "functionName": "width",
+                        "line": 1021
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 65,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "verticalCenter",
+                        "line": 1019
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "visible",
+                        "line": 1027
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 1029
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 1028
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 51,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "hoverEnabled",
+                        "line": 1038
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "enabled",
+                        "line": 1039
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 48,
+                        "durationMicroseconds": 316,
+                        "errorMessage": "Cannot access value for name isSeparator",
+                        "functionName": "onClicked",
+                        "line": 1041
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 1037
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 1054
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 790,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml)::filteredGalaxyMapSystems with type QVariant.",
+                        "functionName": "text",
+                        "line": 1057
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 463,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "text",
+                        "line": 1066
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/HighPerformanceGalaxyMapTab.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

@@ -1,0 +1,668 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 753,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "updateSystemsFromController",
+                        "line": 28
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 166,
+                        "errorMessage": "",
+                        "functionName": "panOffset",
+                        "line": 43
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 656,
+                        "errorMessage": "",
+                        "functionName": "systemFilters",
+                        "line": 56
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "onCompleted",
+                        "line": 11
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 16,
+                        "durationMicroseconds": 133,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method rgba, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 73
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 91
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 112
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 128
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 144
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 153
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 399,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 164
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 253,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 165
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 23,
+                        "durationMicroseconds": 200,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "text",
+                        "line": 171
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 177
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 228,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 178
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 56,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 188
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 234
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 239
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 63,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 247
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 118,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "imageSources",
+                        "line": 252
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 34,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "Cannot load property length from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/GalaxyMapTab.qml)::imageSources with type QVariant.",
+                        "functionName": "onStatusChanged",
+                        "line": 275
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 245
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "xScale",
+                        "line": 267
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "yScale",
+                        "line": 268
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "Cannot access value for name width",
+                        "functionName": "x",
+                        "line": 269
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name height",
+                        "functionName": "y",
+                        "line": 270
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 76,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 263
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 264
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "needsRedraw",
+                        "line": 313
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "onNeedsRedrawChanged",
+                        "line": 314
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "onWidthChanged",
+                        "line": 315
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 77,
+                        "errorMessage": "",
+                        "functionName": "onHeightChanged",
+                        "line": 316
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 6981,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onPaint",
+                        "line": 318
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 295
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "",
+                        "functionName": "xScale",
+                        "line": 305
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "yScale",
+                        "line": 306
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name width",
+                        "functionName": "x",
+                        "line": 307
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Cannot access value for name height",
+                        "functionName": "y",
+                        "line": 308
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 301
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 42,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 302
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 26,
+                        "durationMicroseconds": 895,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onPaint",
+                        "line": 397
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 78,
+                        "errorMessage": "",
+                        "functionName": "onWidthChanged",
+                        "line": 425
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "onHeightChanged",
+                        "line": 426
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 380
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "xScale",
+                        "line": 390
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "yScale",
+                        "line": 391
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot access value for name width",
+                        "functionName": "x",
+                        "line": 392
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "Cannot access value for name height",
+                        "functionName": "y",
+                        "line": 393
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 386
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 387
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot generate efficient code for storing an array in a non-sequence type",
+                        "functionName": "allSystems",
+                        "line": 456
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 13,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "requestRedraw",
+                        "line": 479
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 300,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onPaint",
+                        "line": 484
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 13,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "drawSystemsOptimized",
+                        "line": 499
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 13,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "worldToScreen",
+                        "line": 601
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 13,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "drawCommander",
+                        "line": 614
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 13,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "drawLoadingIndicator",
+                        "line": 645
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 71,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 433
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "xScale",
+                        "line": 442
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "yScale",
+                        "line": 443
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 50,
+                        "errorMessage": "Cannot access value for name width",
+                        "functionName": "x",
+                        "line": 444
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "Cannot access value for name height",
+                        "functionName": "y",
+                        "line": 445
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 221,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 438
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 83,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 439
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 142,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 465
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 85,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 476
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 145,
+                        "errorMessage": "",
+                        "functionName": "acceptedButtons",
+                        "line": 668
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 549,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 673
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 673
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 1618,
+                        "errorMessage": "",
+                        "functionName": "onPositionChanged",
+                        "line": 682
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "onPositionChanged",
+                        "line": 682
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 534,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 694
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 25,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 694
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 22,
+                        "durationMicroseconds": 1388,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onWheel",
+                        "line": 702
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "onWheel",
+                        "line": 702
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 646,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 720
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 720
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 667
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 3622,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onPressed",
+                        "line": 735
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 735
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 402,
+                        "errorMessage": "",
+                        "functionName": "onTriggered",
+                        "line": 779
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/GalaxyMapTab.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

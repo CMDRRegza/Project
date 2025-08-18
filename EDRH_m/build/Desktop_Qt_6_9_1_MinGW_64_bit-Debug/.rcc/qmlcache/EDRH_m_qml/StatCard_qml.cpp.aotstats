@@ -1,0 +1,124 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 1163,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 13
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 27
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 29
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 26,
+                        "durationMicroseconds": 111,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 30
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 34
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 24,
+                        "durationMicroseconds": 93,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 37
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 59,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 45
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 75,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 60,
+                        "errorMessage": "",
+                        "functionName": "verticalAlignment",
+                        "line": 51
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 44,
+                        "errorMessage": "",
+                        "functionName": "horizontalAlignment",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 53
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 54
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/StatCard.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

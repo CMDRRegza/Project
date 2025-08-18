@@ -1,0 +1,380 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 15,
+                        "durationMicroseconds": 263,
+                        "errorMessage": "",
+                        "functionName": "modality",
+                        "line": 16
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 12,
+                        "durationMicroseconds": 156,
+                        "errorMessage": "",
+                        "functionName": "flags",
+                        "line": 17
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 165,
+                        "errorMessage": "",
+                        "functionName": "x",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 8,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "y",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 139,
+                        "errorMessage": "",
+                        "functionName": "onVisibleChanged",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 207,
+                        "errorMessage": "",
+                        "functionName": "onCompleted",
+                        "line": 48
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "target",
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 65
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 24,
+                        "durationMicroseconds": 162,
+                        "errorMessage": "Cannot generate efficient code for MoveRegExp",
+                        "functionName": "currentFolder",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 215,
+                        "errorMessage": "Cannot generate efficient code for call to untyped JavaScript function",
+                        "functionName": "onAccepted",
+                        "line": 74
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 97
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 103
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 109
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 110
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 108
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 118
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 128
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 151
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 163
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 167
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 182
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 40,
+                        "durationMicroseconds": 150,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 202
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 211
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 50,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 222
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 48,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 224
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 51,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 220
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find property \"fill\".",
+                        "functionName": "fill",
+                        "line": 240
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 44,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 245
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 82,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 246
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 250
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 267
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "wrapMode",
+                        "line": 283
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 293
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 302
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 136,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 312
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 51,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 321
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 332
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 334
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 20,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 330
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 345
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 354
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 365
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 47,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 367
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 363
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/ConfirmationDialog.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

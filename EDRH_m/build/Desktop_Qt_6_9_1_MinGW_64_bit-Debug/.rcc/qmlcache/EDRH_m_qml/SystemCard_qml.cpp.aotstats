@@ -1,0 +1,1052 @@
+[
+    {
+        "moduleFiles": [
+            {
+                "entries": [
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 153,
+                        "errorMessage": "",
+                        "functionName": "systemData",
+                        "line": 8
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 42,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "Cannot load property name from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "systemName",
+                        "line": 22
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "Cannot load property category from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "category",
+                        "line": 23
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 40,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "Cannot load property distance from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "distance",
+                        "line": 24
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "Cannot load property potential_or_poi from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "poi",
+                        "line": 25
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "Cannot load property done from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "isDone",
+                        "line": 38
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Instruction \"generate_CallValue\" not implemented",
+                        "functionName": "isClaimed",
+                        "line": 39
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 41,
+                        "durationMicroseconds": 2,
+                        "errorMessage": "Instruction \"generate_CallValue\" not implemented",
+                        "functionName": "claimedBy",
+                        "line": 46
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 45,
+                        "durationMicroseconds": 336,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "isClaimedByUser",
+                        "line": 52
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 45,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "Cannot load property categoryColor from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "categoryColor",
+                        "line": 53
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "backgroundImage",
+                        "line": 60
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 24,
+                        "errorMessage": "",
+                        "functionName": "onBackgroundImageChanged",
+                        "line": 219
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 491,
+                        "errorMessage": "Cannot load property images from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::systemData with type QVariant.",
+                        "functionName": "updateImageSource",
+                        "line": 267
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 1950,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "getBackgroundImage",
+                        "line": 645
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 166,
+                        "errorMessage": "Instruction \"generate_UnwindToLabel\" not implemented",
+                        "functionName": "getCategoryColor",
+                        "line": 696
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "generateHashColor",
+                        "line": 719
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 5,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "hslToRgb",
+                        "line": 749
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 72
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 71
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "",
+                        "functionName": "fillMode",
+                        "line": 81
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 22,
+                        "durationMicroseconds": 120,
+                        "errorMessage": "",
+                        "functionName": "opacity",
+                        "line": 82
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 594,
+                        "errorMessage": "",
+                        "functionName": "onStatusChanged",
+                        "line": 87
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 74,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 79
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 111
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 73,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 116
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 106,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method darker, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 120
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 37,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 131
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 128
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 21,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 137
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 136
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "orientation",
+                        "line": 140
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 35,
+                        "errorMessage": "Cannot access value for name imageLoader",
+                        "functionName": "target",
+                        "line": 151
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 18,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "",
+                        "functionName": "enabled",
+                        "line": 152
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onImageLoaded",
+                        "line": 154
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 150,
+                        "errorMessage": "Cannot access value for name updateImageSource",
+                        "functionName": "onPresetImagesReady",
+                        "line": 180
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onImageLoadFailed",
+                        "line": 195
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 28,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "Cannot generate efficient code for lookup of (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::updateImageSource(...) (stored as QJSValue)",
+                        "functionName": "onCompleted",
+                        "line": 224
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 30,
+                        "durationMicroseconds": 107,
+                        "errorMessage": "",
+                        "functionName": "onDestruction",
+                        "line": 229
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "Cannot access value for name imageLoader",
+                        "functionName": "target",
+                        "line": 237
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 45,
+                        "errorMessage": "Cannot access value for name updateImageSource",
+                        "functionName": "onPresetImagesReady",
+                        "line": 239
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "Cannot access value for name edrhController",
+                        "functionName": "target",
+                        "line": 250
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 9,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Functions without type annotations won't be compiled",
+                        "functionName": "onSystemImagesUpdated",
+                        "line": 251
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 311
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 309
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 314
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 327
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 48,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 332
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "style",
+                        "line": 335
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 38,
+                        "durationMicroseconds": 46,
+                        "errorMessage": "",
+                        "functionName": "cursorShape",
+                        "line": 340
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "Type (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem does not have a property color for writing",
+                        "functionName": "onEntered",
+                        "line": 343
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 35,
+                        "durationMicroseconds": 11,
+                        "errorMessage": "Type (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem does not have a property color for writing",
+                        "functionName": "onExited",
+                        "line": 347
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 105,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 351
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 41,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 339
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 71,
+                        "durationMicroseconds": 31,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 359
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 365
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "elide",
+                        "line": 369
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "style",
+                        "line": 372
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 383
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 384
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 57,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 385
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 186,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 386
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 100,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method lighter, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 389
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 394
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 395
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 54,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 399
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 25,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 393
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot load property color from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 397
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 89,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 407
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 406
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 416
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 55,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 417
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 418
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 94,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method lighter, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 422
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 88,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 427
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 103,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 428
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 432
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 426
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "Cannot load property color from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 430
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 439
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 34,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "visible",
+                        "line": 449
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 64,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 450
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 451
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 129,
+                        "errorMessage": "",
+                        "functionName": "color",
+                        "line": 452
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 91,
+                        "errorMessage": "Cannot generate efficient code for internal conversion with incompatible or ambiguous types: call to method lighter, returning QVariant -> QColor stored as QVariant",
+                        "functionName": "color",
+                        "line": 455
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 36,
+                        "durationMicroseconds": 52,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 460
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 37,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 461
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 38,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 465
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 459
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot load property color from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "color",
+                        "line": 463
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 35,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 472
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 47,
+                        "durationMicroseconds": 23,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 476
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 28,
+                        "durationMicroseconds": 61,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 494
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 29,
+                        "durationMicroseconds": 127,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 495
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 62,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 493
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 32,
+                        "durationMicroseconds": 69,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 505
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 33,
+                        "durationMicroseconds": 58,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 506
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 33,
+                        "durationMicroseconds": 53,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 510
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 504
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 31,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "text",
+                        "line": 518
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 43,
+                        "durationMicroseconds": 22,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 517
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 0,
+                        "errorMessage": "Could not find signal \"clicked\".",
+                        "functionName": "onClicked",
+                        "line": 582
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 39,
+                        "durationMicroseconds": 40,
+                        "errorMessage": "",
+                        "functionName": "alignment",
+                        "line": 527
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 32,
+                        "durationMicroseconds": 28,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 534
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 39,
+                        "durationMicroseconds": 113,
+                        "errorMessage": "Cannot access value for name Qt",
+                        "functionName": "color",
+                        "line": 537
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 36,
+                        "errorMessage": "Cannot access value for name Qt",
+                        "functionName": "color",
+                        "line": 541
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 66,
+                        "durationMicroseconds": 15,
+                        "errorMessage": "Cannot access value for name btnBg",
+                        "functionName": "color",
+                        "line": 542
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 36,
+                        "durationMicroseconds": 27,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "width",
+                        "line": 548
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 17,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "height",
+                        "line": 549
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 37,
+                        "durationMicroseconds": 8,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "radius",
+                        "line": 553
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 38,
+                        "durationMicroseconds": 10,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "opacity",
+                        "line": 554
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 47,
+                        "durationMicroseconds": 4,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "centerIn",
+                        "line": 547
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "color",
+                        "line": 551
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 43,
+                        "durationMicroseconds": 10,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "width",
+                        "line": 552
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 31,
+                        "durationMicroseconds": 5,
+                        "errorMessage": "Cannot access value for name parent",
+                        "functionName": "text",
+                        "line": 574
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 46,
+                        "durationMicroseconds": 126,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "horizontalAlignment",
+                        "line": 578
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 44,
+                        "durationMicroseconds": 97,
+                        "errorMessage": "Cannot access value for name Text",
+                        "functionName": "verticalAlignment",
+                        "line": 579
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 195,
+                        "errorMessage": "",
+                        "functionName": "onEntered",
+                        "line": 594
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 19,
+                        "durationMicroseconds": 244,
+                        "errorMessage": "",
+                        "functionName": "onExited",
+                        "line": 600
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 32,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 607
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 26,
+                        "errorMessage": "",
+                        "functionName": "onPressed",
+                        "line": 607
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 34,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 608
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 21,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "onReleased",
+                        "line": 608
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 33,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 609
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 20,
+                        "durationMicroseconds": 21,
+                        "errorMessage": "",
+                        "functionName": "onClicked",
+                        "line": 609
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 23,
+                        "durationMicroseconds": 30,
+                        "errorMessage": "",
+                        "functionName": "fill",
+                        "line": 590
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 16,
+                        "durationMicroseconds": 72,
+                        "errorMessage": "",
+                        "functionName": "width",
+                        "line": 616
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 17,
+                        "durationMicroseconds": 66,
+                        "errorMessage": "",
+                        "functionName": "height",
+                        "line": 617
+                    },
+                    {
+                        "codegenSuccessful": false,
+                        "column": 17,
+                        "durationMicroseconds": 49,
+                        "errorMessage": "Cannot load property radius from (component in C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml)::parent with type QQuickItem.",
+                        "functionName": "radius",
+                        "line": 621
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 27,
+                        "durationMicroseconds": 29,
+                        "errorMessage": "",
+                        "functionName": "centerIn",
+                        "line": 615
+                    },
+                    {
+                        "codegenSuccessful": true,
+                        "column": 55,
+                        "durationMicroseconds": 43,
+                        "errorMessage": "",
+                        "functionName": "type",
+                        "line": 633
+                    }
+                ],
+                "filePath": "C:/Users/Admin/Downloads/EDRH_redo/EDRH_m/qml/SystemCard.qml"
+            }
+        ],
+        "moduleId": "EDRH(EDRH_m)"
+    }
+]

@@ -1,0 +1,261 @@
+{
+    "classes": [
+        {
+            "className": "JournalMonitor",
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "startMonitoring",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 13,
+                    "name": "stopMonitoring",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "folderPath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "analyzeJournalFolder",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "name": "autoDetectJournalFolder",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "name": "getLatestJournalFile",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 17,
+                    "isConst": true,
+                    "name": "countTotalJumps",
+                    "returnType": "int"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "journalFilePath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "extractCommanderFromJournal",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "isCloned": true,
+                    "name": "extractCommanderFromJournal",
+                    "returnType": "QString"
+                }
+            ],
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "commanderName",
+                    "notify": "commanderNameChanged",
+                    "read": "commanderName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "currentSystem",
+                    "notify": "currentSystemChanged",
+                    "read": "currentSystem",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "journalPath",
+                    "notify": "journalPathChanged",
+                    "read": "journalPath",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setJournalPath"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "isMonitoring",
+                    "notify": "isMonitoringChanged",
+                    "read": "isMonitoring",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "JournalMonitor",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "commanderNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "commanderDetected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "currentSystemChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "journalPathChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "isMonitoringChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "journalUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "system",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "jumpData",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "fsdJumpDetected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "system",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "jumpData",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "carrierJumpDetected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "journalError",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "onFileChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "onDirectoryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 11,
+                    "name": "checkForUpdates",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "journalmonitor.h",
+    "outputRevision": 69
+}

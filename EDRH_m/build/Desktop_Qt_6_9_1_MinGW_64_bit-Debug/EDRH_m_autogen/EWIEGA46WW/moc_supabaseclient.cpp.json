@@ -1,0 +1,1394 @@
+{
+    "classes": [
+        {
+            "className": "SupabaseClient",
+            "lineNumber": 12,
+            "methods": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "url",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "key",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 42,
+                    "name": "configure",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 43,
+                    "isConst": true,
+                    "name": "isConfigured",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 44,
+                    "name": "setCommanderContext",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 45,
+                    "name": "getSystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 46,
+                    "name": "getTakenSystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 47,
+                    "name": "getCurrentCommanderSystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 48,
+                    "name": "getPOISystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 49,
+                    "isCloned": true,
+                    "name": "getPOISystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 50,
+                    "name": "getCategories",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 51,
+                    "name": "getRichardCategories",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "includeRichard",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 52,
+                    "name": "getPresetImages",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 53,
+                    "isCloned": true,
+                    "name": "getPresetImages",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "double"
+                        },
+                        {
+                            "name": "y",
+                            "type": "double"
+                        },
+                        {
+                            "name": "z",
+                            "type": "double"
+                        },
+                        {
+                            "name": "limit",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 54,
+                    "name": "getSystemsNear",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "x",
+                            "type": "double"
+                        },
+                        {
+                            "name": "y",
+                            "type": "double"
+                        },
+                        {
+                            "name": "z",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 55,
+                    "isCloned": true,
+                    "name": "getSystemsNear",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 56,
+                    "name": "getSystemInformation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 57,
+                    "isCloned": true,
+                    "name": "getSystemInformation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 58,
+                    "name": "getSystemInformationFromDB",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 59,
+                    "name": "getSystemInformationFromCategory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commander",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 60,
+                    "name": "claimSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 61,
+                    "name": "unclaimSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commander",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 62,
+                    "name": "markSystemVisited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "visited",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "done",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 63,
+                    "name": "updateSystemStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "visited",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 64,
+                    "name": "updateSystemVisited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "done",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 65,
+                    "name": "updateSystemDone",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 66,
+                    "name": "markSystemAsEdited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commander",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 67,
+                    "name": "checkAdminStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "serviceKey",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 68,
+                    "name": "testAdminAccess",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 69,
+                    "name": "getSystemDetails",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 70,
+                    "name": "getSystemDetailsRobust",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "eventType",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "data",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 71,
+                    "name": "triggerWebhook",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 72,
+                    "name": "getWebhookConfig",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "poiType",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commander",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 73,
+                    "name": "markSystemAsPOI",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commander",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 74,
+                    "name": "removePOIStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "poiType",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "discoverer",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "submitter",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 75,
+                    "name": "updateSystemPOIStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 76,
+                    "name": "saveSystemDescription",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "information",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 77,
+                    "name": "saveSystemInformation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "primaryImage",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "primaryTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "additionalImages",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "additionalTitles",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 78,
+                    "name": "updateSystemImages",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemNames",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 79,
+                    "name": "loadSystemImagesForSystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 80,
+                    "name": "getTakenSystemForCommander",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 81,
+                    "name": "getAllCommanderLocations",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "x",
+                            "type": "double"
+                        },
+                        {
+                            "name": "y",
+                            "type": "double"
+                        },
+                        {
+                            "name": "z",
+                            "type": "double"
+                        },
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 82,
+                    "name": "updateCommanderLocation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 83,
+                    "name": "uploadImageToImgbb",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 84,
+                    "name": "testImgbbApiKey",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 85,
+                    "name": "getPresetImageForCategory",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 86,
+                    "name": "usePresetImageForSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 87,
+                    "name": "getSystemImageUrl",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "imageUrl",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 88,
+                    "name": "saveImageToDatabase",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 89,
+                    "name": "checkSystemVisitedInJournal",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 90,
+                    "name": "initializeDatabaseSync",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 91,
+                    "name": "checkForDatabaseUpdates",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 92,
+                    "isConst": true,
+                    "name": "isFirstRun",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "index": 93,
+                    "name": "performIncrementalSync",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "x1",
+                            "type": "double"
+                        },
+                        {
+                            "name": "y1",
+                            "type": "double"
+                        },
+                        {
+                            "name": "z1",
+                            "type": "double"
+                        },
+                        {
+                            "name": "x2",
+                            "type": "double"
+                        },
+                        {
+                            "name": "y2",
+                            "type": "double"
+                        },
+                        {
+                            "name": "z2",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 94,
+                    "name": "calculateDistance",
+                    "returnType": "double"
+                },
+                {
+                    "access": "public",
+                    "index": 95,
+                    "isConst": true,
+                    "name": "isInAuthFailureCooldown",
+                    "returnType": "bool"
+                }
+            ],
+            "object": true,
+            "qualifiedClassName": "SupabaseClient",
+            "signals": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systems",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 0,
+                    "name": "systemsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "taken",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 1,
+                    "name": "takenSystemsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "pois",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 2,
+                    "name": "poisReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "categories",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 3,
+                    "name": "categoriesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "presetImages",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 4,
+                    "name": "presetImagesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systems",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 5,
+                    "name": "nearestSystemsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemInfo",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 6,
+                    "name": "systemInformationReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 7,
+                    "name": "systemClaimed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 8,
+                    "name": "systemUnclaimed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 9,
+                    "name": "systemMarkedVisited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 10,
+                    "name": "systemStatusUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "isAdmin",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 11,
+                    "name": "adminStatusReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "hasAccess",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 12,
+                    "name": "adminAccessTestComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "imageUrl",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 13,
+                    "name": "presetImageFound",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "imageUrl",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 14,
+                    "name": "systemImageSet",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemImages",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 15,
+                    "name": "bulkSystemImagesLoaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "locations",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 16,
+                    "name": "allCommanderLocationsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 17,
+                    "name": "commanderLocationUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "webhookUrl",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 18,
+                    "name": "webhookConfigReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "eventType",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 19,
+                    "name": "webhookTriggered",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "poiData",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 20,
+                    "name": "poiDataForMergeReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "networkError",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "operation",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "requestCompleted",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 23,
+                    "name": "databaseSyncStatusChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "current",
+                            "type": "int"
+                        },
+                        {
+                            "name": "total",
+                            "type": "int"
+                        },
+                        {
+                            "name": "operation",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 24,
+                    "name": "databaseSyncProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "isFirstRun",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "changesDetected",
+                            "type": "int"
+                        }
+                    ],
+                    "index": 25,
+                    "name": "databaseSyncComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "isBlocked",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "reason",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 26,
+                    "name": "securityCheckComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "isBlocked",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 27,
+                    "isCloned": true,
+                    "name": "securityCheckComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 28,
+                    "name": "authenticationRequired",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 29,
+                    "name": "authenticationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 30,
+                    "isCloned": true,
+                    "name": "authenticationComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 31,
+                    "name": "confirmationRequired",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 32,
+                    "name": "performSecurityCheck",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "allCommanders",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 33,
+                    "name": "handleNewCommander",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "journalPath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 34,
+                    "name": "detectCommanderRenames",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "isAdmin",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "eventType",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "details",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 35,
+                    "name": "logLoginEvent",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "isAdmin",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "eventType",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 36,
+                    "isCloned": true,
+                    "name": "logLoginEvent",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 37,
+                    "name": "isCommanderBlocked",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "blocked",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "notes",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "journalPath",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 38,
+                    "name": "addCommanderToSecurity",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "blocked",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "notes",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 39,
+                    "isCloned": true,
+                    "name": "addCommanderToSecurity",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "commanderName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "blocked",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 40,
+                    "isCloned": true,
+                    "name": "addCommanderToSecurity",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "reply",
+                            "type": "QNetworkReply*"
+                        }
+                    ],
+                    "index": 41,
+                    "name": "handleNetworkReply",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "supabaseclient.h",
+    "outputRevision": 69
+}

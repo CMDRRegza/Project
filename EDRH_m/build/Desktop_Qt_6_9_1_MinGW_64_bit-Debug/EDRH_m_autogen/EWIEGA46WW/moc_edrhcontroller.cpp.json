@@ -1,0 +1,1417 @@
+{
+    "classes": [
+        {
+            "classInfos": [
+                {
+                    "name": "QML.Element",
+                    "value": "auto"
+                }
+            ],
+            "className": "EDRHController",
+            "lineNumber": 21,
+            "object": true,
+            "properties": [
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 0,
+                    "name": "commanderName",
+                    "notify": "commanderNameChanged",
+                    "read": "commanderName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setCommanderName"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 1,
+                    "name": "currentSystem",
+                    "notify": "currentSystemChanged",
+                    "read": "currentSystem",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setCurrentSystem"
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 2,
+                    "name": "appVersion",
+                    "read": "appVersion",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 3,
+                    "name": "isAdmin",
+                    "notify": "isAdminChanged",
+                    "read": "isAdmin",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 4,
+                    "name": "nearestSystems",
+                    "notify": "nearestSystemsChanged",
+                    "read": "nearestSystems",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 5,
+                    "name": "unclaimedSystems",
+                    "notify": "unclaimedSystemsChanged",
+                    "read": "unclaimedSystems",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 6,
+                    "name": "selectedCategory",
+                    "notify": "selectedCategoryChanged",
+                    "read": "selectedCategory",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false,
+                    "write": "setSelectedCategory"
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 7,
+                    "name": "availableCategories",
+                    "notify": "availableCategoriesChanged",
+                    "read": "availableCategories",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 8,
+                    "name": "jumpCount",
+                    "notify": "jumpCountChanged",
+                    "read": "jumpCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 9,
+                    "name": "sessionTime",
+                    "notify": "sessionTimeChanged",
+                    "read": "sessionTime",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 10,
+                    "name": "mapWindowActive",
+                    "notify": "mapWindowActiveChanged",
+                    "read": "mapWindowActive",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 11,
+                    "name": "nearestDistanceText",
+                    "notify": "nearestDistanceTextChanged",
+                    "read": "nearestDistanceText",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 12,
+                    "name": "nearestCategoryText",
+                    "notify": "nearestCategoryTextChanged",
+                    "read": "nearestCategoryText",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 13,
+                    "name": "unclaimedIndex",
+                    "notify": "unclaimedIndexChanged",
+                    "read": "unclaimedIndex",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 14,
+                    "name": "unclaimedTotal",
+                    "notify": "unclaimedTotalChanged",
+                    "read": "unclaimedTotal",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 15,
+                    "name": "currentUnclaimedSystemName",
+                    "notify": "currentUnclaimedSystemNameChanged",
+                    "read": "currentUnclaimedSystemName",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QString",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 16,
+                    "name": "suppressMainAppNotifications",
+                    "notify": "suppressMainAppNotificationsChanged",
+                    "read": "suppressMainAppNotifications",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false,
+                    "write": "setSuppressMainAppNotifications"
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 17,
+                    "name": "supabaseClient",
+                    "read": "supabaseClient",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "SupabaseClient*",
+                    "user": false
+                },
+                {
+                    "constant": true,
+                    "designable": true,
+                    "final": false,
+                    "index": 18,
+                    "name": "claimManager",
+                    "read": "claimManager",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "ClaimManager*",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 19,
+                    "name": "galaxyMapSystems",
+                    "notify": "galaxyMapSystemsChanged",
+                    "read": "galaxyMapSystems",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 20,
+                    "name": "commanderPosition",
+                    "notify": "commanderPositionChanged",
+                    "read": "commanderPosition",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantMap",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 21,
+                    "name": "visibleSystemsCount",
+                    "notify": "visibleSystemsCountChanged",
+                    "read": "visibleSystemsCount",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "int",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 22,
+                    "name": "galaxyMapLoading",
+                    "notify": "galaxyMapLoadingChanged",
+                    "read": "galaxyMapLoading",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "bool",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 23,
+                    "name": "allCommanderLocations",
+                    "notify": "allCommanderLocationsChanged",
+                    "read": "allCommanderLocations",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "QVariantList",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 24,
+                    "name": "commanderX",
+                    "notify": "commanderPositionChanged",
+                    "read": "commanderX",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                },
+                {
+                    "constant": false,
+                    "designable": true,
+                    "final": false,
+                    "index": 25,
+                    "name": "commanderZ",
+                    "notify": "commanderPositionChanged",
+                    "read": "commanderZ",
+                    "required": false,
+                    "scriptable": true,
+                    "stored": true,
+                    "type": "double",
+                    "user": false
+                }
+            ],
+            "qualifiedClassName": "EDRHController",
+            "signals": [
+                {
+                    "access": "public",
+                    "index": 0,
+                    "name": "commanderNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 1,
+                    "name": "currentSystemChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 2,
+                    "name": "isAdminChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 3,
+                    "name": "nearestSystemsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 4,
+                    "name": "unclaimedSystemsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 5,
+                    "name": "selectedCategoryChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 6,
+                    "name": "availableCategoriesChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 7,
+                    "name": "jumpCountChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 8,
+                    "name": "sessionTimeChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 9,
+                    "name": "mapWindowActiveChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 10,
+                    "name": "nearestDistanceTextChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 11,
+                    "name": "nearestCategoryTextChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 12,
+                    "name": "unclaimedIndexChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 13,
+                    "name": "unclaimedTotalChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 14,
+                    "name": "currentUnclaimedSystemNameChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 15,
+                    "name": "suppressMainAppNotificationsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 16,
+                    "name": "galaxyMapSystemsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 17,
+                    "name": "commanderPositionChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 18,
+                    "name": "visibleSystemsCountChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 19,
+                    "name": "galaxyMapLoadingChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 20,
+                    "name": "allCommanderLocationsChanged",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 21,
+                    "name": "showMessage",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "title",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "message",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 22,
+                    "name": "showError",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 23,
+                    "name": "navigationRequested",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 24,
+                    "name": "systemUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemData",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 25,
+                    "name": "showSystemPopup",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 26,
+                    "name": "openGalaxyMapWindow",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemInfo",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 27,
+                    "name": "systemInformationReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemTypeFilter",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 28,
+                    "name": "requestFilterChange",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemData",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 29,
+                    "name": "edsmSystemDataReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 30,
+                    "name": "systemClaimed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 31,
+                    "name": "systemUnclaimed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "imageUrl",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "success",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 32,
+                    "name": "systemImageSet",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemNames",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 33,
+                    "name": "systemImagesUpdated",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "progress",
+                            "type": "double"
+                        },
+                        {
+                            "name": "status",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 34,
+                    "name": "databaseDownloadProgress",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 35,
+                    "name": "databaseDownloadComplete",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 36,
+                    "name": "requestImagePicker",
+                    "returnType": "void"
+                }
+            ],
+            "slots": [
+                {
+                    "access": "public",
+                    "index": 37,
+                    "name": "refreshData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 38,
+                    "name": "viewCurrentSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 39,
+                    "name": "createPOI",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 40,
+                    "name": "openMap",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 41,
+                    "name": "openGalaxyMap",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 42,
+                    "name": "claimSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 43,
+                    "name": "viewSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 44,
+                    "name": "viewYourSystems",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "text",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 45,
+                    "name": "copyToClipboard",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 46,
+                    "name": "showAdminPanel",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 47,
+                    "name": "prevUnclaimed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 48,
+                    "name": "nextUnclaimed",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 49,
+                    "name": "viewClosest",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 50,
+                    "name": "claimClosest",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 51,
+                    "name": "markSystemVisited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 52,
+                    "name": "markSystemDone",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 53,
+                    "name": "unclaimSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "category",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 54,
+                    "name": "getSystemInformation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 55,
+                    "isCloned": true,
+                    "name": "getSystemInformation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 56,
+                    "name": "getSystemInformationRobust",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 57,
+                    "isConst": true,
+                    "name": "isSystemClaimable",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 58,
+                    "name": "getSystemFromEDSM",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 59,
+                    "name": "getEDSMSystemData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "poiType",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 60,
+                    "name": "markSystemAsPOI",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 61,
+                    "name": "removePOIStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 62,
+                    "name": "verifyJournal",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 63,
+                    "name": "revokeJournalVerification",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "description",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 64,
+                    "name": "saveSystemDescription",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 65,
+                    "name": "openImagePicker",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "fileName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 66,
+                    "name": "handleImageSelected",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filePath",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 67,
+                    "name": "uploadImageToImgbb",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 68,
+                    "isConst": true,
+                    "name": "checkSystemVisitedInJournal",
+                    "returnType": "bool"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "information",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 69,
+                    "name": "saveSystemInformation",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "visited",
+                            "type": "bool"
+                        },
+                        {
+                            "name": "done",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 70,
+                    "name": "updateSystemStatus",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "visited",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 71,
+                    "name": "updateSystemVisited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "done",
+                            "type": "bool"
+                        }
+                    ],
+                    "index": 72,
+                    "name": "updateSystemDone",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 73,
+                    "name": "markSystemAsEdited",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "primaryImage",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "primaryTitle",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "additionalImages",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "additionalTitles",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 74,
+                    "name": "updateSystemImages",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 75,
+                    "isConst": true,
+                    "name": "getPrimaryImageForSystem",
+                    "returnType": "QString"
+                },
+                {
+                    "access": "public",
+                    "index": 76,
+                    "name": "loadGalaxyMapData",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "filters",
+                            "type": "QVariantMap"
+                        }
+                    ],
+                    "index": 77,
+                    "name": "updateGalaxyMapFilters",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 78,
+                    "name": "focusOnSystem",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "minX",
+                            "type": "double"
+                        },
+                        {
+                            "name": "maxX",
+                            "type": "double"
+                        },
+                        {
+                            "name": "minZ",
+                            "type": "double"
+                        },
+                        {
+                            "name": "maxZ",
+                            "type": "double"
+                        }
+                    ],
+                    "index": 79,
+                    "name": "getSystemsInRegion",
+                    "returnType": "QVariantMap"
+                },
+                {
+                    "access": "public",
+                    "arguments": [
+                        {
+                            "name": "categories",
+                            "type": "QStringList"
+                        }
+                    ],
+                    "index": 80,
+                    "name": "updateCategoryFilter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 81,
+                    "name": "resetCategoryFilter",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 82,
+                    "name": "startJournalMonitoring",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 83,
+                    "name": "stopJournalMonitoring",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 84,
+                    "name": "selectJournalFolder",
+                    "returnType": "void"
+                },
+                {
+                    "access": "public",
+                    "index": 85,
+                    "name": "startFullDatabaseDownload",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 86,
+                    "name": "updateSessionTime",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "index": 87,
+                    "name": "processJournalUpdate",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "systems",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 88,
+                    "name": "handleSystemsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "systems",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 89,
+                    "name": "handleNearestSystemsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "taken",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 90,
+                    "name": "handleTakenSystemsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "categories",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 91,
+                    "name": "handleCategoriesReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "pois",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 92,
+                    "name": "handlePOISReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "poiData",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 93,
+                    "name": "handlePOIDataForMerge",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "systemName",
+                            "type": "QString"
+                        },
+                        {
+                            "name": "systemInfo",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 94,
+                    "name": "handleSystemInformationReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "locations",
+                            "type": "QJsonArray"
+                        }
+                    ],
+                    "index": 95,
+                    "name": "handleAllCommanderLocationsReceived",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "systemImages",
+                            "type": "QJsonObject"
+                        }
+                    ],
+                    "index": 96,
+                    "name": "handleBulkSystemImagesLoaded",
+                    "returnType": "void"
+                },
+                {
+                    "access": "private",
+                    "arguments": [
+                        {
+                            "name": "error",
+                            "type": "QString"
+                        }
+                    ],
+                    "index": 97,
+                    "name": "handleSupabaseError",
+                    "returnType": "void"
+                }
+            ],
+            "superClasses": [
+                {
+                    "access": "public",
+                    "name": "QObject"
+                }
+            ]
+        }
+    ],
+    "inputFile": "edrhcontroller.h",
+    "outputRevision": 69
+}

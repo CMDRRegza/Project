@@ -1,4 +1,0 @@
-PySide6
-requests
-urllib3
-qdarktheme  #optional
