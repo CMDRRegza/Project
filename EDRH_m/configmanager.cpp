@@ -23,7 +23,7 @@ ConfigManager::ConfigManager(QObject *parent)
 void ConfigManager::initializeDefaults()
 {
     m_commanderName = "Unknown";
-    m_journalPath = "C:\\Users\\Admin\\Saved Games\\Frontier Developments\\Elite Dangerous";
+    m_journalPath = "%USERPROFILE%\\Saved Games\\Frontier Developments\\Elite Dangerous";
     m_currentSystem = "Unknown";
     m_supabaseUrl = "";
     m_supabaseKey = "";
@@ -71,7 +71,7 @@ bool ConfigManager::loadConfig()
     
     // Load configuration values
     m_commanderName = m_configData.value("commander_name").toString("Unknown");
-    m_journalPath = m_configData.value("journal_path").toString("C:\\Users\\Admin\\Saved Games\\Frontier Developments\\Elite Dangerous");
+    m_journalPath = m_configData.value("journal_path").toString("%USERPROFILE%\\Saved Games\\Frontier Developments\\Elite Dangerous");
     m_currentSystem = m_configData.value("current_journal").toString("Unknown");
     m_supabaseUrl = m_configData.value("supabase_url").toString();
     m_supabaseKey = m_configData.value("supabase_key").toString();
